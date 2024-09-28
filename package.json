@@ -1,0 +1,17 @@
+{
+  "name": "noopur-jain",
+  "version": "1.0.0",
+  "description": "templete - https://dev24.kodesolution.com/visago/home-layout2/",
+  "main": "swiper.js",
+  "scripts": {
+    "build": "tailwindcss -i ./index.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  }
+}

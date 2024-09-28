@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #3f3f46;
+}
+
+li {
+  font-size: 1.25rem;
+  color: #3f3f46;
+}
+.text-color-black {
+  li {
+    color: #000000;
+  }
+}
+@media not all and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+.heading-font {
+  font-family: "Cormorant", serif;
+}
+.curcive-font {
+  font-family: "Qwitcher Grypen", sans-serif;
+}
+.bg-primary {
+  background-color: #8c793a;
+}
+.bg-primary-hover {
+  background-color: #806f35;
+}
+.text-primary {
+  color: #8c793a;
+}
+.border-primary {
+  border-color: #8c793a;
+}
+.bg-secondary {
+  background-color: #eae5db;
+}
+.bg-third {
+  background-color: #d4af37;
+}
+
+.socials {
+  width: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8c793a;
+}
+
+.star {
+  width: 2rem;
+  aspect-ratio: 1;
+  background: #d4af37;
+  clip-path: polygon(
+    50% 0,
+    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+  );
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+
+.clip-path {
+  clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
+}
+.rhombus {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.li-bullets {
+  display: grid;
+  grid-template-columns: repeat(
+    1,
+    minmax(0, 1fr)
+  ); /* One column for the entire list */
+}
+
+.li-bullets li {
+  display: flex; /* Use flexbox to align the bullet and text horizontally */
+  align-items: flex-start; /* Align the bullet and text to the top */
+  grid-column: span 1 / span 1; /* Ensure li spans the entire grid column */
+  font-size: 1.25rem;
+  color: #3f3f46;
+}
+
+.li-bullets li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("./assets/icons/circle-texture.png");
+  background-size: cover; /* Ensures the image covers the area */
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.326);
+  border-radius: 50%;
+  flex-shrink: 0; /* Prevent the bullet from shrinking */
+  margin-top: 0.4rem;
+  vertical-align: middle;
+}
+
+/* Video Play Animation  */
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: #eae5db;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+/* End Video Play Animation  */

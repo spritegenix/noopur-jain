@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOOPUR JAIN | Sound Healing</title>
+    <meta
+      name="description"
+      content="Heal yourself and create a life worth living"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <!--defer  Script  -->
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <script src="swiper.js" defer></script>
+  </head>
+  <body>
+    <!-- Desktop Header -->
+    <header
+      class="bg-primary w-full hidden lg:block fixed top-0 left-0 right-0 z-50 h-24"
+    >
+      <nav
+        class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 flex justify-between items-center text-lg gap-5 py-3"
+      >
+        <a href="/" class="text-white hover:scale-105">Home</a>
+        <a href="/about.html" class="text-white hover:scale-105">About</a>
+        <div class="relative group">
+          <a href="/courses.html" class="text-white hover:scale-105">Courses</a>
+          <ul
+            class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
+          >
+            <a
+              href="/sound-healing.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Sound Healing</a
+            >
+            <a
+              href="/meditation-training-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Meditation Training Courses
+            </a>
+            <a
+              href="/reiki-initiation-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Reiki Initiation Courses</a
+            >
+          </ul>
+        </div>
+
+        <a href="/events.html" class="text-white hover:scale-105">Events</a>
+        <a href="/" class="text-white">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+        <a href="/work-with-nooper.html" class="text-white hover:scale-105"
+          >Work With Noopur
+        </a>
+        <a href="/blog.html" class="text-white hover:scale-105">Blog </a>
+        <a href="/contact-us.html" class="text-white hover:scale-105"
+          >Contact
+        </a>
+      </nav>
+    </header>
+    <!-- Mobile Header  -->
+    <header
+      class="bg-primary w-full lg:hidden fixed top-0 left-0 right-0 z-50 h-16"
+    >
+      <nav class="w-full p-5 flex items-center justify-between py-3">
+        <img src="./assets/logo.png" alt="logo" class="max-w-44" />
+        <!-- Hamburger Icon -->
+        <div class="lg:hidden">
+          <button
+            id="menuButton"
+            class="text-white focus:outline-none flex flex-col gap-1"
+          >
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="bg-white w-full lg:hidden fixed top-14 left-0 hidden"
+      >
+        <nav class="flex flex-col w-full text-lg text-primary font-semibold">
+          <a
+            href="/"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >About</a
+          >
+          <div class="">
+            <div class="w-full flex justify-between border-b border-zinc-300">
+              <a
+                href="/courses.html"
+                class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+                >Courses</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="w-4 mr-5"
+                id="coursesButton"
+              >
+                <path
+                  d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <ul class="flex flex-col" id="coursesMenu">
+              <a
+                href="/sound-healing.html"
+                class="px-10 py-2 hover:bg-[#8c793a] border-b border-zinc-300 hover:text-white"
+                >Sound Healing</a
+              >
+              <a
+                href="/meditation-training-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Meditation Training Courses
+              </a>
+              <a
+                href="/reiki-initiation-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Reiki Initiation Courses</a
+              >
+            </ul>
+          </div>
+          <a
+            href="/events.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Events</a
+          >
+          <a
+            href="/work-with-noopur.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Work With Noopur</a
+          >
+          <a href="/blog.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Blog</a
+          >
+          <a href="/contact-us.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- -----------------------------------------------------  -->
+    <!-- banner section  -->
+    <section class="bg-secondary relative pt-16 lg:pt-24">
+      <img
+        src="./assets/banners/banner.png"
+        alt=""
+        class="w-full h-72 md:h-[87vh] object-cover"
+      />
+      <div
+        class="absolute bottom-0 px-5 text-center py-5 md:py-16 flex flex-col items-center w-full gap-10"
+      >
+        <h2 class="text-3xl md:text-5xl heading-font">
+          Heal yourself and create a life worth living
+        </h2>
+        <button
+          class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
+        >
+          Let’s get started
+        </button>
+      </div>
+    </section>
+    <!-- ------------------------------------------  -->
+    <!-- Sound Healing Course  -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
+        <div class="w-full flex max-md:justify-center">
+          <img
+            src="./assets/banners/Rectangle 53.png"
+            alt=""
+            class="w-full object-cover"
+          />
+        </div>
+        <div class="space-y-10 relative my-auto">
+          <!-- heading  -->
+          <h2 class="text-primary heading-font text-3xl md:text-5xl">
+            Sound Healing Course
+          </h2>
+          <p>
+            Welcome to the magical and healing world of sound vibrations. As
+            many turn to alternative healing methods - sound healing is becoming
+            increasingly popular and widely accepted by many around the world.
+            With the rising demand for skilled practitioners, sound healing
+            teacher training courses have emerged to equip individuals with the
+            knowledge and expertise needed to become proficient sound healing
+            masters.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------------------------------------  -->
+    <!-- What is a sound vibration?  -->
+    <section class="relative bg-secondary w-full">
+      <img
+        src="./assets/bacground.png"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="back"
+      />
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            What is a sound vibration?
+          </h2>
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- content  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
+          <div class="space-y-5 order-2 md:order-1 md:my-auto">
+            <div class="space-y-10 relative">
+              <p>
+                A sound vibration is the wave of sound that travels through the
+                air and interact with the body. These vibrations resonate at
+                specific frequencies, which then are capable of influencing the
+                body's energy fields and promote healing. When exposed to these
+                sound vibrations, our body's cells and tissues can harmonise and
+                synchronise, leading to improved physical, emotional, and mental
+                health. Many ancient instrument like Tibetan singing bowls,
+                tuning forks, drums and gongs are often used to create these
+                therapeutic sound vibrations, helping to restore balance and
+                body’s natural resonance.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex max-md:justify-center order-1 md:order-2">
+            <img
+              src="./assets/banners/Rectangle 53.png"
+              alt=""
+              class="w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Sound Healing?  -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
+      >
+        <div class="w-[20%] h-0 border-t border-primary"></div>
+        <h2 class="heading-font text-3xl md:text-5xl">Why Sound Healing?</h2>
+        <div class="w-[20%] h-0 border-t border-primary"></div>
+      </div>
+      <!-- content  -->
+      <div class="space-y-5 md:space-y-10">
+        <p>
+          Sound healing has seen an increase in popularity in recent years, as
+          more individuals turn to alternative healing methods to enhance their
+          physical, emotional, and spiritual well-being. With the rising demand
+          for skilled practitioners, sound healing teacher training courses have
+          emerged to equip individuals with the knowledge and expertise needed
+          to become proficient sound healing masters.
+        </p>
+        <div class="relative">
+          <img
+            src="./assets/banners/banner.png"
+            class="object-cover w-full"
+            alt=""
+          />
+          <div
+            class="video-play-button absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <a href="#">
+              <div
+                class="text-2xl video-play-button p-5 rounded-full bg-primary"
+              >
+                <p class="relative z-10 text-white">
+                  <svg
+                    viewBox="0 0 24 32"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    enable-background="new 0 0 24 32"
+                    class="h-8 w-8"
+                  >
+                    <path
+                      d="m0 0 24 16L0 32z"
+                      fill="#ffffff"
+                      class="fill-4e4e50"
+                    ></path>
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <p>
+          In our sound healing course, we delve into the comprehensive syllabus
+          of a typical sound healing teacher training program and explore how it
+          helps participants to become successful and effective sound healers.
+        </p>
+      </div>
+      <!-- -----------------------------  -->
+    </section>
+    <!-- Benefits of Sound Healing Training -->
+    <section class="bg-secondary w-full relative">
+      <img
+        src="./assets/background1.png"
+        class="absolute inset-0 object-cover w-full"
+        alt=""
+      />
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[5%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            Benefits of Sound Healing Training
+          </h2>
+          <div class="w-[5%] h-0 border-t border-primary"></div>
+        </div>
+        <p
+          class="heading-font max-w-screen-md mx-auto text-2xl text-center font-bold mb-5"
+        >
+          The Sound Healer TTC covers a wide range of topics that are essential
+          for becoming a skilled healer and teacher. Below are the highlights of
+          the course:
+        </p>
+        <!-- content  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            <img src="./assets/icons/left arrow.png" alt="" />
+            <div class="p-3 md:p-5 bg-white mb-5">
+              <h2 class="heading-font text-xl font-bold p-3 text-primary">
+                1. Introduction to Sound Healing:
+              </h2>
+              <p>
+                Explore the science of sound healing and the foundational
+                principles of vibration, frequency, and resonance. Understand
+                how sound affects the body and mind at a cellular level.
+              </p>
+            </div>
+            <div class="p-3 md:p-5 bg-white">
+              <h2 class="heading-font text-xl text-primary p-3 font-bold">
+                2.Sound Healing Instruments:
+              </h2>
+              <p>
+                Learn to use a variety of sound healing instruments such as
+                Himalayan singing bowls, bells, chimes, drums etc.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="p-3 md:p-5 bg-white mb-5">
+              <h2 class="heading-font text-xl text-primary p-3 font-bold">
+                3.Sound Healing Techniques:
+              </h2>
+              <p>
+                Discover diverse sound healing techniques and learn to create
+                personalized sound healing sessions to promote deep relaxation,
+                stress reduction, and holistic healing
+              </p>
+            </div>
+            <div class="p-3 md:p-5 bg-white">
+              <h2 class="heading-font text-primary text-xl p-3 font-bold">
+                4.Creating a Sound Healing Environment:
+              </h2>
+              <p>
+                Learn to create a safe, supportive space for clients, fostering
+                a relaxing atmosphere. Understand the importance of energy
+                cleansing and maintaining high vibrational energy in your space.
+              </p>
+            </div>
+            <div class="flex justify-end">
+              <img
+                src="./assets/icons/right arrow.png"
+                class="relative right-0"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Know about the 2 Levels of Sound Healing Course 1 -->
+    <section class="bg-secondary w-full relative">
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 pt-10 md:pt-16"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[5%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            Know about the 2 Levels of Sound Healing Course
+          </h2>
+          <div class="w-[5%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- content  -->
+        <h5 class="heading-font text-2xl md:text-4xl capitalize p-5">
+          Level 1 (2 Days)
+        </h5>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="relative col-span-2 order-2 md:order-1">
+            <div class="absolute inset-0 overflow-hidden max-md:hidden">
+              <img
+                src="./assets/background2.png"
+                class="w-full object-cover"
+                alt="back"
+              />
+            </div>
+            <ul
+              class="font-semibold li-bullets flex flex-col gap-y-3 md:pl-5 md:pr-20 py-5 md:py-10 relative z-10"
+            >
+              <li>Initiation Ritual and Basics of healing</li>
+              <li>Introduction on Himalayan sound therapy</li>
+              <li>Philosophy of sound (Om as universal energy)</li>
+              <li>Understanding of how sound vibrations work on our body</li>
+              <li>
+                Introduction to healing tools Himalyan bowls, gong, tingsha and
+                bells etc.
+              </li>
+              <li>Basics of playing Himalayan Bowls - Strikes and Rotation</li>
+              <li>Understanding sound frequencies</li>
+              <li>Identifying the sound frequencies</li>
+              <li>Aura Cleansing / Space Cleansing</li>
+              <li>
+                Introduction to chakras and significance of chakra sound
+                therapies
+              </li>
+              <li>Using Himalayan bowls for Chakra Activation & Therapies</li>
+              <li>
+                Different tools and techniques for mental and physical healing
+              </li>
+            </ul>
+          </div>
+          <div class="h-full flex md:-ml-20 z-10 order-1 md:order-2">
+            <img
+              src="./assets/banners/Rectangle 53.png"
+              class="w-full my-auto h-96 object-cover"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Know about the 2 Levels of Sound Healing Course 2 -->
+    <section class="bg-secondary w-full relative">
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- content  -->
+        <h5
+          class="md:text-right heading-font text-2xl md:text-4xl capitalize p-5"
+        >
+          Level 2 (3 Days)
+        </h5>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="h-full flex md:-mr-20 z-10">
+            <img
+              src="./assets/banners/Rectangle 53.png"
+              class="w-full my-auto h-96 object-cover"
+              alt="image"
+            />
+          </div>
+          <div class="relative col-span-2">
+            <div class="absolute inset-0 overflow-hidden max-md:hidden">
+              <img
+                src="./assets/background2.png"
+                class="w-full object-cover"
+                alt="back"
+              />
+            </div>
+            <ul
+              class="font-semibold li-bullets flex flex-col gap-y-3 md:pl-28 md:pr-20 py-5 md:py-10 relative z-10"
+            >
+              <li class="inline">
+                Introduction to Advanced Therapy Techniques
+              </li>
+              <li class="inline">
+                Hydro Sound Therapy and Water Recharge Therapy
+              </li>
+              <li class="inline">
+                Sound Healing and its effects on brainwaves
+              </li>
+              <li class="inline">Sound Healing Meditation Technique</li>
+              <li class="inline">Group Therapies and Sound Baths</li>
+              <li class="inline">
+                Sound & Pain Management through sound bowls
+              </li>
+              <li class="inline">
+                Sound Healing application in Asana Practice (Yin Yoga)
+              </li>
+              <li class="inline">Sound Healing and Yog Nidra</li>
+              <li class="inline">
+                Vibrational Full body massage with sound bowls
+              </li>
+              <li class="inline">Couple Sound Therapy</li>
+              <li class="inline">Self Healing Therapies</li>
+              <li class="inline">Safety Rules and ways of protection</li>
+              <li class="inline">Choosing your own sound bowls</li>
+              <li class="inline">
+                Practice sessions to apply different techniques
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quote  -->
+    <section class="relative bg-secondary w-full">
+      <img
+        src="./assets/bacground.png"
+        class="absolute inset-0 object-cover"
+        alt="back"
+      />
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- content  -->
+        <ul
+          class="li-bullets md:text-center flex flex-col md:items-center gap-4 heading-font font-semibold text-2xl"
+        >
+          <li class="md:!text-3xl">
+            A certificate of completion that acknowledges your commitment, skill
+            and qualification to conduct - Sound Healing meditation sessions and
+            workshops.
+          </li>
+          <li class="md:!text-3xl">
+            You will be able to lead vibration sound massage, Chakra Healing
+            with singing bowls, gongs bath sessions, uses of bells and other
+            Himalayan sound healing instruments.
+          </li>
+          <li class="md:!text-3xl">
+            All the healing instruments will be provided at time of the course.
+          </li>
+          <li class="md:!text-3xl">
+            Sound healing course manual will be provided.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Course Fee  -->
+    <section class="bg-secondary w-full relative">
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 pt-10 md:pt-16"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            Course fee
+          </h2>
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- content  -->
+        <ul class="space-y-5">
+          <li class="relative border-2 border-[#8c793a]">
+            <img
+              src="./assets/background1.png"
+              class="absolute inset-0 w-full h-full"
+              alt="back"
+            />
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 relative z-10 p-2 md:p-5"
+            >
+              <img
+                src="./assets/banners/Rectangle 53.png"
+                class="md:col-span-2 w-full object-cover relative z-10"
+                alt=""
+              />
+              <div
+                class="md:col-span-10 relative z-10 md:pl-10 flex flex-col gap-5 justify-between"
+              >
+                <div>
+                  <h2 class="heading-font text-3xl mb-5">
+                    Level 1 - 2 Days (5 hours each day)
+                  </h2>
+                  <p class="heading-font text-2xl">
+                    Classes, practice sessions, use of instruments
+                  </p>
+                </div>
+                <div class="space-y-5">
+                  <p class="py-2 px-4 border-2 border-primary w-max">
+                    12,000 INR
+                  </p>
+                  <div class="flex justify-between relative">
+                    <a href="/about.html" class="w-max relative z-10">
+                      <button
+                        class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
+                      >
+                        BOOK NOW
+                      </button>
+                    </a>
+                    <div
+                      class="w-full absolute top-1/2 h-0 border-t border-primary"
+                    ></div>
+                    <img
+                      src="./assets/icons/circle-texture.png"
+                      alt=""
+                      class="relative z-10 object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="relative border-2 border-[#8c793a]">
+            <img
+              src="./assets/background1.png"
+              class="absolute inset-0 w-full h-full"
+              alt="back"
+            />
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 relative z-10 p-2 md:p-5"
+            >
+              <img
+                src="./assets/banners/Rectangle 53.png"
+                class="md:col-span-2 w-full object-cover relative z-10"
+                alt=""
+              />
+              <div
+                class="md:col-span-10 relative z-10 md:pl-10 flex flex-col gap-5 justify-between"
+              >
+                <div>
+                  <h2 class="heading-font text-3xl mb-5">
+                    Level 2 - 3 Days (5 hours each day)
+                  </h2>
+                  <p class="heading-font text-2xl">
+                    Classes, practice sessions, use of instruments
+                  </p>
+                </div>
+                <div class="space-y-5">
+                  <p class="py-2 px-4 border-2 border-primary w-max">
+                    15,000 INR
+                  </p>
+                  <div class="flex justify-between relative">
+                    <a href="/about.html" class="w-max relative z-10">
+                      <button
+                        class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
+                      >
+                        BOOK NOW
+                      </button>
+                    </a>
+                    <div
+                      class="w-full absolute top-1/2 h-0 border-t border-primary"
+                    ></div>
+                    <img
+                      src="./assets/icons/circle-texture.png"
+                      alt=""
+                      class="relative z-10 object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="relative border-2 border-[#8c793a]">
+            <img
+              src="./assets/background1.png"
+              class="absolute inset-0 w-full h-full"
+              alt="back"
+            />
+            <div
+              class="grid grid-cols-1 md:grid-cols-12 relative z-10 p-2 md:p-5"
+            >
+              <img
+                src="./assets/banners/Rectangle 53.png"
+                class="md:col-span-2 w-full object-cover relative z-10"
+                alt=""
+              />
+              <div
+                class="md:col-span-10 relative z-10 md:pl-10 flex flex-col gap-5 justify-between"
+              >
+                <div>
+                  <h2 class="heading-font text-3xl mb-5">
+                    All Levels 1 & 2 (Master) -5 Days
+                  </h2>
+                  <p class="heading-font text-2xl">
+                    Classes, practice sessions, use of instruments
+                  </p>
+                </div>
+                <div class="space-y-5">
+                  <p class="py-2 px-4 border-2 border-primary w-max">
+                    27000 INR
+                  </p>
+                  <div class="flex justify-between relative">
+                    <a href="/about.html" class="w-max relative z-10">
+                      <button
+                        class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
+                      >
+                        BOOK NOW
+                      </button>
+                    </a>
+                    <div
+                      class="w-full absolute top-1/2 h-0 border-t border-primary"
+                    ></div>
+                    <img
+                      src="./assets/icons/circle-texture.png"
+                      alt=""
+                      class="relative z-10 object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      s
+    </section>
+    <!-- Connect on Instagram @alignwithnoopur Section  -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
+      >
+        <div class="w-[5%] h-0 border-t border-primary"></div>
+        <h2 class="heading-font text-3xl md:text-5xl">
+          Connect on Instagram @alignwithnoopur
+        </h2>
+        <div class="w-[5%] h-0 border-t border-primary"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-24">
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/icons/insta.png"
+              class="absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+          <img src="./assets/banners/Rectangle 53.png" alt="" />
+        </div>
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/icons/insta.png"
+              class="absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+          <img src="./assets/banners/Rectangle 53.png" alt="" />
+        </div>
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/icons/insta.png"
+              class="absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+          <img src="./assets/banners/Rectangle 53.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT US  -->
+    <section class="bg-secondary w-full">
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            CONTACT US
+          </h2>
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- Form  -->
+        <form
+          action=""
+          method="post"
+          class="max-w-screen-md mx-auto space-y-8 heading-font"
+        >
+          <p>Stay up to date with Noopur Jain.</p>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Name"
+            />
+          </div>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Email"
+            />
+          </div>
+          <div class="flex justify-between relative">
+            <button
+              type="submit"
+              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+            >
+              Connect With Me
+            </button>
+            <div
+              class="w-full absolute top-1/2 h-0 border-t border-primary"
+            ></div>
+            <img
+              src="./assets/icons/circle-texture.png"
+              alt=""
+              class="relative z-10 object-contain"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32">
+      <!-- line 1  -->
+      <div
+        class="flex md:justify-between items-center flex-wrap gap-2 max-md:flex-col justify-center py-4 border-b border-black"
+      >
+        <div class="flex gap-2 items-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/facebook logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/youtube-logo.png" alt=""
+          /></a>
+        </div>
+        <img
+          src="./assets/footer-logo.png"
+          class="object-contain"
+          alt="footer-logo"
+        />
+        <div class="flex gap-2">
+          <div class="w-full h-min max-w-sm min-w-[200px]">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b-2 border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Type here..."
+            />
+          </div>
+          <button
+            class="px-2 py-1 bg-primary hover:bg-primary-hover text-white text-nowrap h-min"
+          >
+            JOIN US
+          </button>
+        </div>
+      </div>
+      <!-- line 2  -->
+      <div
+        class="flex justify-between gap-5 flex-wrap py-4 border-b border-black"
+      >
+        <!-- col-span-1  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              ABOUT Noopur jain
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/location icon.png" alt="" />
+              <p>India</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/call icon.png" alt="" />
+              <a href="tel:+91 8957865554">+91 8957865554</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/e mail icon.png" alt="" />
+              <a href="mailto:@Noopurjain.com">@Noopurjain.com</a>
+            </li>
+          </ul>
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              Open Hours
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <p>Monday to Friday 08:00 - 20:00</p>
+        </div>
+        <!-- col-span-2  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              IMPORTANT LINKS
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4 uppercase">
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/work-with-nooper.html" class="">Work With Noopur</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/about-us.html" class="hover:text-primary">about us</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/blogs.html" class="hover:text-primary">blogs</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/events.html" class="hover:text-primary">events</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/courses.html" class="hover:text-primary">courses</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/contact-us.html" class="hover:text-primary"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- col-span-3  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              RECENT POST
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-5 flex flex-col">
+            <a
+              href="#"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16">
+                <img
+                  src="./assets/post/post-1 img.png"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Lorem ipsum</p>
+                <p class="flex gap-2">
+                  <img
+                    src="./assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16">
+                <img
+                  src="./assets/post/post-1 img.png"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Lorem ipsum</p>
+                <p class="flex gap-2">
+                  <img
+                    src="./assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <!-- line 3  -->
+      <div class="text-center text-primary py-4">
+        <p>Copyright  2024 NOOPUR JAIN. Designed by SPRITE GENIX</p>
+      </div>
+    </footer>
+  </body>
+</html>

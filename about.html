@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOOPUR JAIN | About Me</title>
+    <meta
+      name="description"
+      content="Heal yourself and create a life worth living"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <!--defer  Script  -->
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <script src="swiper.js" defer></script>
+  </head>
+  <body>
+    <!-- Desktop Header -->
+    <header
+      class="bg-primary w-full hidden lg:block fixed top-0 left-0 right-0 z-50 h-24"
+    >
+      <nav
+        class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 flex justify-between items-center text-lg gap-5 py-3"
+      >
+        <a href="/" class="text-white hover:scale-105">Home</a>
+        <a href="/about.html" class="text-white hover:scale-105">About</a>
+        <div class="relative group">
+          <a href="/courses.html" class="text-white hover:scale-105">Courses</a>
+          <ul
+            class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
+          >
+            <a
+              href="/sound-healing.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Sound Healing</a
+            >
+            <a
+              href="/meditation-training-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Meditation Training Courses
+            </a>
+            <a
+              href="/reiki-initiation-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Reiki Initiation Courses</a
+            >
+          </ul>
+        </div>
+
+        <a href="/events.html" class="text-white hover:scale-105">Events</a>
+        <a href="/" class="text-white">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+        <a href="/work-with-nooper.html" class="text-white hover:scale-105"
+          >Work With Noopur
+        </a>
+        <a href="/blog.html" class="text-white hover:scale-105">Blog </a>
+        <a href="/contact-us.html" class="text-white hover:scale-105"
+          >Contact
+        </a>
+      </nav>
+    </header>
+    <!-- Mobile Header  -->
+    <header
+      class="bg-primary w-full lg:hidden fixed top-0 left-0 right-0 z-50 h-16"
+    >
+      <nav class="w-full p-5 flex items-center justify-between py-3">
+        <img src="./assets/logo.png" alt="logo" class="max-w-44" />
+        <!-- Hamburger Icon -->
+        <div class="lg:hidden">
+          <button
+            id="menuButton"
+            class="text-white focus:outline-none flex flex-col gap-1"
+          >
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="bg-white w-full lg:hidden fixed top-14 left-0 hidden"
+      >
+        <nav class="flex flex-col w-full text-lg text-primary font-semibold">
+          <a
+            href="/"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >About</a
+          >
+          <div class="">
+            <div class="w-full flex justify-between border-b border-zinc-300">
+              <a
+                href="/courses.html"
+                class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+                >Courses</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="w-4 mr-5"
+                id="coursesButton"
+              >
+                <path
+                  d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <ul class="flex flex-col" id="coursesMenu">
+              <a
+                href="/sound-healing.html"
+                class="px-10 py-2 hover:bg-[#8c793a] border-b border-zinc-300 hover:text-white"
+                >Sound Healing</a
+              >
+              <a
+                href="/meditation-training-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Meditation Training Courses
+              </a>
+              <a
+                href="/reiki-initiation-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Reiki Initiation Courses</a
+              >
+            </ul>
+          </div>
+          <a
+            href="/events.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Events</a
+          >
+          <a
+            href="/work-with-noopur.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Work With Noopur</a
+          >
+          <a href="/blog.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Blog</a
+          >
+          <a href="/contact-us.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- -----------------------------------------------------  -->
+    <!-- banner section  -->
+    <section class="bg-secondary relative pt-16 lg:pt-24">
+      <img
+        src="./assets/banners/banner.png"
+        alt=""
+        class="w-full h-72 md:h-[87vh] object-cover"
+      />
+      <div
+        class="absolute inset-0 px-5 text-center py-5 md:py-16 flex items-center w-full gap-10"
+      >
+        <div
+          class="text-3xl md:text-8xl text-left heading-font font-bold md:pl-20"
+        >
+          <p>Meet</p>
+          <p class="pl-32">Nooper</p>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------------------------------------  -->
+    <!-- Quote 1  -->
+    <section class="bg-secondary w-full">
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20 md:pb-36"
+      >
+        <p class="text-center text-3xl leading-relaxed text-primary">
+          "A holistic healer, a mystic, a spiritual mentor and an ascension
+          guide - I am here to open up a sacred path and guide you to the
+          journey of healing and transformation."
+        </p>
+        <img
+          src="./assets/icons/star.png"
+          class="absolute bottom-8 right-8"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- Quote 2  -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <!-- content  -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 max-md:gap-y-5 md:gap-30 pb-20 md:pb-32"
+      >
+        <div
+          class="w-full md:h-min flex max-md:justify-center relative md:-mt-32"
+        >
+          <img
+            src="./assets/banners/Rectangle 53.png"
+            alt=""
+            class="w-full object-cover"
+          />
+          <img
+            src="./assets/banners/Rectangle 53.png"
+            class="max-md:hidden absolute h-48 top-full left-full -translate-x-1/2 -translate-y-1/2"
+            alt=""
+          />
+        </div>
+        <div class="space-y-10 relative md:px-16 col-span-2 text-center">
+          <h2
+            class="heading-font leading-relaxed text-3xl md:text-5xl capitalize flex gap-5 relative text-primary"
+          >
+            “A path that truly aligns with your soul, is the one that will open
+            doors you never knew existed”
+          </h2>
+        </div>
+      </div>
+      <!-- -----------------------------  -->
+    </section>
+    <!--  How my path led to become a Healer and a Mystic?  -->
+    <section class="bg-secondary w-full relative">
+      <div
+        class="max-md:hidden absolute md:w-[23rem] 3xl:w-[37rem] bg-[#b6a47c] top-0 right-0 h-full"
+      ></div>
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- content  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-56">
+          <div
+            class="space-y-5 order-2 md:order-1 flex flex-col h-full justify-center"
+          >
+            <!-- heading  -->
+            <div
+              class="flex items-center justify-center gap-2 md:gap-5 mb-5 md:mb-10"
+            >
+              <h2
+                class="heading-font text-3xl md:text-5xl capitalize text-primary"
+              >
+                How my path led to become a Healer and a Mystic?
+              </h2>
+            </div>
+            <div class="space-y-10 relative">
+              <p>
+                As a child I grew up learning meditation, visiting temples with
+                my family and sitting for hours doing meditation or reading
+                ancient scriptures. This led my curious mind dive even deeper in
+                to the mysteries of the universe and everything was behind the
+                veil - the unexplored divine nature of our soul. As a result -
+                at the age of 12, I went to the school of sacred and spiritual
+                teachings to understand the path of our ascended masters. And,
+                something shifted deep inside me that made me realise our
+                multidimensional nature and our potential to expand
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-center md:justify-end-end order-1 md:order-2"
+          >
+            <img
+              src="./assets/banners/Rectangle 53.png"
+              alt=""
+              class="relative z-10 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- missing link -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <!-- content  -->
+      <div class="grid grid-cols-1 md:grid-cols-3 max-md:gap-y-5 xl:gap-48">
+        <div
+          class="w-full md:h-min flex max-md:justify-center my-auto relative"
+        >
+          <div class="relative">
+            <img
+              src="./assets/icons/Frame.png"
+              class="absolute bottom-full left-1/2 -translate-x-1/2 translate-y-1/2"
+              alt=""
+            />
+            <img
+              src="./assets/banners/Rectangle 53.png"
+              alt=""
+              class="w-full object-cover"
+            />
+          </div>
+          <img
+            src="./assets/banners/Rectangle 53.png"
+            class="object-cover max-xl:hidden absolute max-h-48 top-full left-full -translate-x-1/2 -translate-y-1/2"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-span-2 space-y-5 order-2 md:order-1 flex flex-col h-full justify-center md:pl-10"
+        >
+          <!-- heading  -->
+          <div
+            class="flex items-center justify-center gap-2 md:gap-5 mb-5 md:mb-10"
+          >
+            <h2
+              class="heading-font text-3xl md:text-5xl capitalize text-primary"
+            >
+              The missing link between our material and spiritual nature.
+            </h2>
+          </div>
+          <div class="space-y-5 relative">
+            <p>
+              Eventually as I grew up, I gave my all into achieving success. I
+              quickly climbed the ladder working with global brands and traveled
+              around the world. Eventually as an established entrepreneur - I
+              was exposed to some harsh realities of the world. The connection
+              with our true divine essence was missing.
+            </p>
+            <p>
+              I started to feel the disconnect from my gifts and my ultimate
+              purpose here.
+            </p>
+            <p>
+              There was no place for me to find answers and no-one to guide me
+              along this path. And so, I moved to the divine land of Himalayas.
+              There in parallel to my work I deeply immersed into my spiritual
+              journey. Studied and practised under several traditions learning
+              different healing modalities, yogic path and ancient meditation
+              techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------  -->
+    </section>
+    <!--  My true gifts awaken. -->
+    <section class="bg-secondary w-full relative">
+      <div
+        class="max-md:hidden absolute md:w-[23rem] 3xl:w-[37rem] bg-[#b6a47c] top-0 right-0 h-full"
+      ></div>
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- content  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-56">
+          <div
+            class="space-y-5 order-2 md:order-1 flex flex-col h-full justify-center"
+          >
+            <!-- heading  -->
+            <div
+              class="flex items-center justify-center gap-2 md:gap-5 mb-5 md:mb-10"
+            >
+              <h2
+                class="heading-font text-3xl md:text-5xl capitalize text-primary"
+              >
+                My true gifts awaken.
+              </h2>
+            </div>
+            <div class="space-y-10 relative">
+              <p>
+                Soon after, I realised my calling and awakened to my purpose. I
+                now work with so many seekers and people who want to awaken this
+                knowing within them - of their true nature and potential.
+              </p>
+              <p>
+                With the blessings of my ancestors and my parents who have been
+                an immense support and guiding light for me - I am able to find
+                my roots that helps me serve from the place of love. I wish for
+                you to be inspired to create a life that is your highest
+                expression and allow beautiful things to unfold.
+              </p>
+              <p>
+                Thank you for being here. If you’d like to connect, get in
+                touch!
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full flex justify-center md:justify-end-end order-1 md:order-2"
+          >
+            <img
+              src="./assets/banners/Rectangle 53.png"
+              alt=""
+              class="relative z-10 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Free offerings to help you start the journey  -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
+      >
+        <div class="w-[5%] h-0 border-t border-primary"></div>
+        <h2 class="heading-font text-3xl md:text-5xl">
+          Free offerings to help you start the journey
+        </h2>
+        <div class="w-[5%] h-0 border-t border-primary"></div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-52 md:gap-40 max-sm:mt-52 md:mt-60"
+      >
+        <div class="relative">
+          <div
+            class="z-10 absolute left-1/2 bottom-full translate-y-1/2 -translate-x-1/2 w-[80%] sm:w-[60%] p-3 bg-secondary shadow-lg"
+          >
+            <img
+              src="./assets/banners/aa.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="clip-path bg-secondary text-center px-5 py-20 pt-52 flex flex-col gap-5 items-center"
+          >
+            <h2 class="heading-font text-xl md:text-3xl">
+              FULL MOON RITUAL +SELF REFLECTION JOURNAL
+            </h2>
+            <p>
+              Download a thoughtfully created and designed special “Full Moon
+              Bundle” to enhance your spiritual journey. It  includes a Full
+              Moon Ritual and a Release and Reflect Journal to help you attune
+              to cosmic energy, create a sacred space, and release what’s
+              holding you back.
+            </p>
+            <a
+              href="#"
+              type="submit"
+              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+            >
+              Download Now
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="z-10 absolute left-1/2 bottom-full translate-y-1/2 -translate-x-1/2 w-[80%] sm:w-[60%] p-3 bg-secondary shadow-lg"
+          >
+            <img
+              src="./assets/banners/aa.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="clip-path bg-secondary text-center px-5 py-20 pt-52 flex flex-col gap-5 items-center"
+          >
+            <h2 class="heading-font text-xl md:text-3xl">
+              NEW MOON AFFIRMATIONS; GUIDED MEDITATION
+            </h2>
+            <p>
+              Download 30 Powerful New Moon Affirmations - a guided meditation
+              to reprogram your mind and shape the reality you desire. This
+              meditation includes affirmations with  'I am,' 'I Feel,' and 'I
+              See' statements, linked to the root, heart, and third eye chakras.
+              Take the next step and design your life’s vision!
+            </p>
+            <a
+              href="#"
+              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+            >
+              Download Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials   -->
+    <section class="bg-secondary w-full">
+      <div
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div class="mb-5 md:mb-10">
+          <div
+            class="flex items-center justify-center text-center gap-2 md:gap-5"
+          >
+            <div class="w-[20%] h-0 border-t border-primary"></div>
+            <h2
+              class="heading-font text-3xl md:text-5xl capitalize text-primary"
+            >
+              CUSTOMER
+            </h2>
+            <div class="w-[20%] h-0 border-t border-primary"></div>
+          </div>
+          <p
+            class="max-md:hidden text-white text-center pl-36 text-7xl curcive-font"
+          >
+            Testimonials
+          </p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper swiper1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper mb-10">
+            <!-- Slides -->
+            <div class="swiper-slide w-full">
+              <div class="h-max grid grid-cols-12 gap-2 md:gap-5 p-3">
+                <div class="col-span-12 md:col-span-10 space-y-3">
+                  <h2 class="text-primary text-lg">Lorem ipsum</h2>
+                  <p class="md:line-clamp-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitsed
+                    do eiusmod tempororem ipsum dolor sit am econsect
+                    adipiscing. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elitsed do eiusmod tempororem ipsum dolor sit am
+                    econsect ametconsectetetur adipiscing.
+                  </p>
+                  <div class="flex justify-end gap-2">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star bg-white"></span>
+                  </div>
+                </div>
+                <div class="col-span-2 p-3 min-w-24 bg-white max-md:hidden">
+                  <img
+                    src="./assets/testimonial/t1.jpg"
+                    alt=""
+                    class="h-40 w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide w-full">
+              <div class="h-max grid grid-cols-12 gap-2 md:gap-5 p-3">
+                <div class="col-span-12 md:col-span-10 space-y-3">
+                  <h2 class="text-primary text-lg">Lorem ipsum</h2>
+                  <p class="md:line-clamp-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elitsed
+                    do eiusmod tempororem ipsum dolor sit am econsect
+                    adipiscing. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elitsed do eiusmod tempororem ipsum dolor sit am
+                    econsect ametconsectetetur adipiscing.
+                  </p>
+                  <div class="flex justify-end gap-2">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star bg-white"></span>
+                  </div>
+                </div>
+                <div class="col-span-2 p-3 min-w-24 bg-white max-md:hidden">
+                  <img
+                    src="./assets/testimonial/t1.jpg"
+                    alt=""
+                    class="h-40 w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div
+            class="swiper-button-prev top-[94%] rounded-full bg-secondary p-2 h-12 w-12 after:text-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              class="p-1"
+            >
+              <path
+                d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
+              />
+            </svg>
+          </div>
+          <div
+            class="swiper-button-next top-[94%] rounded-full bg-secondary p-2 h-12 w-12 after:text-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              class="p-1"
+            >
+              <path
+                d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Connect on Instagram @alignwithnoopur Section  -->
+    <section
+      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
+      >
+        <div class="w-[5%] h-0 border-t border-primary"></div>
+        <h2 class="heading-font text-3xl md:text-5xl">
+          Connect on Instagram @alignwithnoopur
+        </h2>
+        <div class="w-[5%] h-0 border-t border-primary"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-24">
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/icons/insta.png"
+              class="absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+          <img src="./assets/banners/Rectangle 53.png" alt="" />
+        </div>
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/icons/insta.png"
+              class="absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+          <img src="./assets/banners/Rectangle 53.png" alt="" />
+        </div>
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/icons/insta.png"
+              class="absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+          <img src="./assets/banners/Rectangle 53.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT US  -->
+    <section class="bg-secondary w-full">
+      <div
+        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            CONTACT US
+          </h2>
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- Form  -->
+        <form
+          action=""
+          method="post"
+          class="max-w-screen-md mx-auto space-y-8 heading-font"
+        >
+          <p class="text-lg">Stay up to date with Noopur Jain.</p>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Name"
+            />
+          </div>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Email"
+            />
+          </div>
+          <div class="flex justify-between relative">
+            <button
+              type="submit"
+              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+            >
+              Connect With Me
+            </button>
+            <div
+              class="w-full absolute top-1/2 h-0 border-t border-primary"
+            ></div>
+            <img
+              src="./assets/icons/circle-texture.png"
+              alt=""
+              class="relative z-10 object-contain"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer  -->
+    <footer class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32">
+      <!-- line 1  -->
+      <div
+        class="flex md:justify-between items-center flex-wrap gap-2 max-md:flex-col justify-center py-4 border-b border-black"
+      >
+        <div class="flex gap-2 items-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/facebook logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="./assets/icons/youtube-logo.png" alt=""
+          /></a>
+        </div>
+        <img
+          src="./assets/footer-logo.png"
+          class="object-contain"
+          alt="footer-logo"
+        />
+        <div class="flex gap-2">
+          <div class="w-full h-min max-w-sm min-w-[200px]">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b-2 border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Type here..."
+            />
+          </div>
+          <button
+            class="px-2 py-1 bg-primary hover:bg-primary-hover text-white text-nowrap h-min"
+          >
+            JOIN US
+          </button>
+        </div>
+      </div>
+      <!-- line 2  -->
+      <div
+        class="flex justify-between gap-5 flex-wrap py-4 border-b border-black"
+      >
+        <!-- col-span-1  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              ABOUT Noopur jain
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/location icon.png" alt="" />
+              <p>India</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/call icon.png" alt="" />
+              <a href="tel:+91 8957865554">+91 8957865554</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/e mail icon.png" alt="" />
+              <a href="mailto:@Noopurjain.com">@Noopurjain.com</a>
+            </li>
+          </ul>
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              Open Hours
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <p>Monday to Friday 08:00 - 20:00</p>
+        </div>
+        <!-- col-span-2  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              IMPORTANT LINKS
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4 uppercase">
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/work-with-nooper.html" class="">Work With Noopur</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/about-us.html" class="hover:text-primary">about us</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/blogs.html" class="hover:text-primary">blogs</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/events.html" class="hover:text-primary">events</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/courses.html" class="hover:text-primary">courses</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./assets/icons/right-arrow.png" alt="" />
+              <a href="/contact-us.html" class="hover:text-primary"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- col-span-3  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              RECENT POST
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-5 flex flex-col">
+            <a
+              href="#"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16">
+                <img
+                  src="./assets/post/post-1 img.png"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Lorem ipsum</p>
+                <p class="flex gap-2">
+                  <img
+                    src="./assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16">
+                <img
+                  src="./assets/post/post-1 img.png"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Lorem ipsum</p>
+                <p class="flex gap-2">
+                  <img
+                    src="./assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <!-- line 3  -->
+      <div class="text-center text-primary py-4">
+        <p>Copyright  2024 NOOPUR JAIN. Designed by SPRITE GENIX</p>
+      </div>
+    </footer>
+  </body>
+</html>
