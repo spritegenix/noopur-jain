@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NOOPUR JAIN | Reiki Initiation Courses</title>
+    <title>NOOPUR JAIN | Contact Us</title>
     <meta
       name="description"
       content="Heal yourself and create a life worth living"
@@ -39,11 +39,7 @@
         <a href="/" class="text-white hover:scale-105">Home</a>
         <a href="/about.html" class="text-white hover:scale-105">About</a>
         <div class="relative group">
-          <a
-            hrefreiki-initiation-courses.html="/courses.html"
-            class="text-white hover:scale-105"
-            >Courses</a
-          >
+          <p class="text-white hover:scale-105 cursor-pointer">Courses</p>
           <ul
             class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
           >
@@ -58,7 +54,7 @@
               >Meditation Training Courses
             </a>
             <a
-              href="/"
+              href="/reiki-initiation-courses.html"
               class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
               >Reiki Initiation Courses</a
             >
@@ -113,17 +109,17 @@
             >About</a
           >
           <div class="">
-            <div class="w-full flex justify-between border-b border-zinc-300">
-              <a
-                href="/courses.html"
-                class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
-                >Courses</a
-              >
+            <div
+              class="w-full flex justify-between border-b border-zinc-300"
+              id="coursesButton"
+            >
+              <p class="border-b pl-5 border-zinc-300 py-1 text-primary">
+                Courses
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
                 class="w-4 mr-5"
-                id="coursesButton"
               >
                 <path
                   d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
@@ -176,25 +172,21 @@
         class="w-full h-72 md:h-[87vh] object-cover"
       />
       <div
-        class="absolute bottom-0 px-5 text-center py-5 md:py-16 flex flex-col items-center w-full gap-10"
+        class="absolute inset-0 px-5 text-center py-5 md:py-16 flex flex-col items-center justify-center w-full gap-10"
       >
-        <h2 class="text-3xl md:text-5xl heading-font">
-          Reiki Initiation Course
+        <h2 class="text-3xl md:text-7xl font-bold heading-font text-white">
+          Contact Us
         </h2>
-        <button
-          class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
-        >
-          Let’s get started
-        </button>
       </div>
     </section>
     <!-- ------------------------------------------  -->
-    <!-- Reiki Initiation Course  -->
     <section
-      data-aos="fade-up"
-      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      class="bg-secondary relative w-full max-w-screen-2xl overflow-x-hidden overflow-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
+      <div
+        data-aos="fade-up"
+        class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72"
+      >
         <div data-aos="fade-right" class="w-full flex max-md:justify-center">
           <img
             src="./assets/banners/Rectangle 53.png"
@@ -202,243 +194,59 @@
             class="w-full object-cover"
           />
         </div>
-        <div class="space-y-10 relative my-auto">
-          <h2 class="heading-font text-primary text-3xl md:text-5xl">
-            Reiki Initiation Course
+        <div data-aos="fade-left" class="space-y-8 relative my-auto">
+          <!-- heading  -->
+          <h2 class="text-primary heading-font text-3xl md:text-5xl">
+            Let's Connect...
           </h2>
-          <p>
-            As a dedicated 8th lineage reiki master, it is my grand purpose to
-            offer reiki initiations in Usui Reiki System. With a mission to
-            expand this beautiful lineage and attune as many souls as possible
-            to channel the reiki energy - the universal force to heal self and
-            others. Join me to bring more balance, peace, love and well-being in
-            your life. Let’s bring more light in this world! I can’t wait to
-            share this healing practise with you!
-          </p>
+          <p>What's on your mind? I look forward to hearing from you!</p>
+          <!-- Form  -->
+          <form
+            action=""
+            method="post"
+            class="max-w-screen-md mx-auto space-y-10 heading-font"
+          >
+            <div class="w-full h-min">
+              <input
+                class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                placeholder="Name"
+              />
+            </div>
+            <div class="w-full h-min">
+              <input
+                class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="w-full h-min">
+              <textarea
+                id="message"
+                rows="4"
+                class="block p-2.5 w-full placeholder:text-slate-400 text-slate-700 bg-gray-50 border border-primary"
+                placeholder="Write your thoughts here..."
+              ></textarea>
+            </div>
+            <div class="flex justify-between relative">
+              <button
+                type="submit"
+                class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+              >
+                SUMBIT
+              </button>
+              <div
+                class="w-full absolute top-1/2 h-0 border-t border-primary"
+              ></div>
+              <img
+                src="./assets/icons/circle-texture.png"
+                alt=""
+                class="relative z-10 object-contain"
+              />
+            </div>
+          </form>
         </div>
       </div>
     </section>
     <!-- -----------------------------------------------------  -->
-    <!-- What is Reiki?  -->
-    <section data-aos="fade-up" class="relative bg-secondary w-full">
-      <img
-        src="./assets/bacground.png"
-        class="absolute inset-0 w-full h-full object-cover"
-        alt="back"
-      />
-      <div
-        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
-      >
-        <!-- heading  -->
-        <div
-          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
-        >
-          <div class="w-[20%] h-0 border-t border-primary"></div>
-          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
-            What is Reiki?
-          </h2>
-          <div class="w-[20%] h-0 border-t border-primary"></div>
-        </div>
-        <!-- content  -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
-          <div class="space-y-5 order-2 md:order-1 md:my-auto">
-            <div class="space-y-10 relative">
-              <p>
-                Reiki is a type of energy healing that comes from Japan. The
-                word "Reiki" combines two Japanese words: "Rei," which means
-                "universal," and "Ki," which means "life energy." Think of it as
-                a way to channel positive energy from the universe through your
-                hands to help heal yourself or others. When our life force
-                energy is low or blocked, we might feel stressed or get sick.
-                Reiki helps to clear those blockages and restore balance,
-                promoting healing and well-being.
-              </p>
-            </div>
-          </div>
-          <div class="w-full flex max-md:justify-center order-1 md:order-2">
-            <img
-              src="./assets/banners/Rectangle 53.png"
-              alt=""
-              class="w-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Brief History of Reiki  -->
-    <section
-      data-aos="fade-up"
-      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
-    >
-      <!-- heading  -->
-      <div
-        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
-      >
-        <div class="w-[20%] h-0 border-t border-primary"></div>
-        <h2 class="heading-font text-3xl md:text-5xl">
-          Brief History of Reiki
-        </h2>
-        <div class="w-[20%] h-0 border-t border-primary"></div>
-      </div>
-      <!-- content  -->
-      <div class="space-y-5 md:space-y-10">
-        <p>
-          Reiki was developed in the early 1900s by Dr. Mikao Usui, a Japanese
-          Buddhist. Dr. Usui was on a quest to find a method of healing that
-          wouldn’t drain his own energy. After years of searching and
-          meditating, he had a spiritual experience on Mount Kurama, where he
-          received the ability to channel healing energy.
-        </p>
-        <div class="relative">
-          <img
-            src="./assets/banners/banner.png"
-            class="object-cover w-full"
-            alt=""
-          />
-          <div
-            class="video-play-button absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          >
-            <a href="#">
-              <div
-                class="text-2xl video-play-button p-5 rounded-full bg-primary"
-              >
-                <p class="relative z-10 text-white">
-                  <svg
-                    viewBox="0 0 24 32"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    enable-background="new 0 0 24 32"
-                    class="h-8 w-8"
-                  >
-                    <path
-                      d="m0 0 24 16L0 32z"
-                      fill="#ffffff"
-                      class="fill-4e4e50"
-                    ></path>
-                  </svg>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <p>
-          Dr. Usui spent his life teaching Reiki, and his students carried on
-          his work. One of his students, Dr. Chujiro Hayashi, helped organize
-          the practice. Later, a woman named Hawayo Takata brought Reiki to the
-          Western world after learning from Dr. Hayashi. Now, Reiki is practiced
-          all over the globe, with different styles and teachings.
-        </p>
-      </div>
-      <!-- -----------------------------  -->
-    </section>
-    <!-- Benefits of Reiki -->
-    <section data-aos="fade-up" class="bg-secondary w-full relative">
-      <!-- <div
-        class="max-md:hidden absolute md:w-[23rem] 3xl:w-[37rem] bg-[#b6a47c] top-0 right-0 h-full"
-      ></div> -->
-      <img
-        src="./assets/background1.png"
-        class="absolute inset-0 object-cover w-full"
-        alt=""
-      />
-      <div
-        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
-      >
-        <!-- heading  -->
-        <div
-          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
-        >
-          <div class="w-[5%] h-0 border-t border-primary"></div>
-          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
-            Benefits of Reiki
-          </h2>
-          <div class="w-[5%] h-0 border-t border-primary"></div>
-        </div>
-        <p
-          class="heading-font max-w-screen-md mx-auto text-2xl text-center font-bold mb-5"
-        >
-          Reiki has many benefits, which is why it’s so popular. Here are some
-          key points:
-        </p>
-        <!-- content  -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div>
-            <img src="./assets/icons/left arrow.png" alt="" />
-            <div class="p-3 md:p-5 bg-white mb-5">
-              <h2 class="heading-font text-xl font-bold p-3 text-primary">
-                1.Stress Reduction and Relaxation:
-              </h2>
-              <p>
-                Reiki helps you relax deeply and reduce stress. It balances your
-                mind and emotions, leaving you feeling peaceful.
-              </p>
-            </div>
-            <div class="p-3 md:p-5 bg-white">
-              <h2 class="heading-font text-xl text-primary p-3 font-bold">
-                2.Pain Relief:
-              </h2>
-              <p>
-                Many people find that Reiki helps reduce pain, whether it’s from
-                chronic issues, injuries, or surgery recovery. It promotes
-                faster healing and comfort.
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="p-3 md:p-5 bg-white mb-5">
-              <h2 class="heading-font text-xl text-primary p-3 font-bold">
-                3. Emotional Healing:
-              </h2>
-              <p>
-                Reiki can help release emotional blockages and past traumas,
-                leading to better emotional health. It clears negative feelings
-                and boosts positive ones.
-              </p>
-            </div>
-            <div class="p-3 md:p-5 bg-white">
-              <h2 class="heading-font text-primary text-xl p-3 font-bold">
-                4. Mental Clarity:
-              </h2>
-              <p>
-                By balancing your energy centers, or chakras, Reiki improves
-                mental clarity and focus. It helps you feel more centered and
-                grounded.
-              </p>
-            </div>
-            <div class="flex justify-end">
-              <img
-                src="./assets/icons/right arrow.png"
-                class="relative right-0"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Quote  -->
-    <section data-aos="fade-up" class="relative bg-secondary w-full">
-      <img
-        src="./assets/bacground.png"
-        class="absolute inset-0 object-cover"
-        alt="back"
-      />
-      <div
-        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
-      >
-        <!-- content  -->
-        <p class="text-center heading-font text-3xl">
-          "I’d love for you to join me on a Reiki journey! Whether you’re new to
-          Reiki or want to deepen your practice, this course will teach you how
-          to use Reiki energy to heal yourself and others. We’ll learn how to
-          channel this amazing energy, practice self-healing, and support others
-          on their healing paths. It’s a great way to bring more balance, peace,
-          and well-being into your life. Let’s explore the wonderful world of
-          Reiki together. I can’t wait to share this beautiful practice with
-          you!"
-        </p>
-      </div>
-    </section>
     <!-- Connect on Instagram @alignwithnoopur Section  -->
     <section
       data-aos="fade-up"
@@ -485,59 +293,6 @@
           </div>
           <img src="./assets/banners/Rectangle 53.png" alt="" />
         </div>
-      </div>
-    </section>
-    <!-- CONTACT US  -->
-    <section class="bg-secondary w-full">
-      <div
-        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
-      >
-        <!-- heading  -->
-        <div
-          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
-        >
-          <div class="w-[20%] h-0 border-t border-primary"></div>
-          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
-            CONTACT US
-          </h2>
-          <div class="w-[20%] h-0 border-t border-primary"></div>
-        </div>
-        <!-- Form  -->
-        <form
-          action=""
-          method="post"
-          class="max-w-screen-md mx-auto space-y-8 heading-font"
-        >
-          <p class="text-lg">Stay up to date with Noopur Jain.</p>
-          <div class="w-full h-min">
-            <input
-              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
-              placeholder="Name"
-            />
-          </div>
-          <div class="w-full h-min">
-            <input
-              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
-              placeholder="Email"
-            />
-          </div>
-          <div class="flex justify-between relative">
-            <button
-              type="submit"
-              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
-            >
-              Connect With Me
-            </button>
-            <div
-              class="w-full absolute top-1/2 h-0 border-t border-primary"
-            ></div>
-            <img
-              src="./assets/icons/circle-texture.png"
-              alt=""
-              class="relative z-10 object-contain"
-            />
-          </div>
-        </form>
       </div>
     </section>
     <footer

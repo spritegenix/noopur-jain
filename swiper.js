@@ -90,3 +90,50 @@ const swiper1 = new Swiper(".swiper1", {
     },
   },
 });
+
+const swiperBlog = new Swiper(".swiperBlog", {
+  // Optional parameters
+  direction: "horizontal",
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  centeredSlides: true,
+
+  loop: true,
+  autoplay: {
+    speeds: 2000,
+    delay: 4000,
+  },
+  speed: 1000,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+  breakpoints: {
+    1199: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    575: {
+      slidesPerView: 1,
+    },
+  },
+});

@@ -8,12 +8,14 @@
       name="description"
       content="Heal yourself and create a life worth living"
     />
+    <link href="./aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="tailwind.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="output.css" />
     <!--defer  Script  -->
     <script
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -37,11 +39,7 @@
         <a href="/" class="text-white hover:scale-105">Home</a>
         <a href="/about.html" class="text-white hover:scale-105">About</a>
         <div class="relative group">
-          <a
-            hrefreiki-initiation-courses.html="/courses.html"
-            class="text-white hover:scale-105"
-            >Courses</a
-          >
+          <p class="text-white hover:scale-105 cursor-pointer">Courses</p>
           <ul
             class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
           >
@@ -56,7 +54,7 @@
               >Meditation Training Courses
             </a>
             <a
-              href="/"
+              href="/reiki-initiation-courses.html"
               class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
               >Reiki Initiation Courses</a
             >
@@ -111,17 +109,17 @@
             >About</a
           >
           <div class="">
-            <div class="w-full flex justify-between border-b border-zinc-300">
-              <a
-                href="/courses.html"
-                class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
-                >Courses</a
-              >
+            <div
+              class="w-full flex justify-between border-b border-zinc-300"
+              id="coursesButton"
+            >
+              <p class="border-b pl-5 border-zinc-300 py-1 text-primary">
+                Courses
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
                 class="w-4 mr-5"
-                id="coursesButton"
               >
                 <path
                   d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
@@ -189,11 +187,12 @@
     <!-- ------------------------------------------  -->
     <!-- Meditation Training Course  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
       <!-- heading  -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
-        <div class="w-full flex max-md:justify-center">
+        <div data-aos="fade-right" class="w-full flex max-md:justify-center">
           <img
             src="./assets/banners/Rectangle 53.png"
             alt=""
@@ -223,14 +222,14 @@
     </section>
     <!-- -----------------------------------------------------  -->
     <!-- Benefits of Meditation Practice  -->
-    <section class="relative bg-secondary w-full">
+    <section data-aos="fade-up" class="relative bg-secondary w-full">
       <img
         src="./assets/background3.jpg"
         class="absolute inset-0 w-full h-full object-cover opacity-30"
         alt="back"
       />
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20 md:pb-36"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20 md:pb-36"
       >
         <!-- heading  -->
         <div
@@ -273,7 +272,7 @@
     <!-- Benefits of Meditation Practice Images -->
     <section class="relative w-full -mt-20 max-md:hidden">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 grid grid-cols-1 md:grid-cols-3 gap-5"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 grid grid-cols-1 md:grid-cols-3 gap-5"
       >
         <img
           src="./assets/banners/24ca71fb537272f37650864c23af4e05.jpg"
@@ -294,7 +293,8 @@
     </section>
     <!-- How Regular Meditation Can Upgrade Your Life?  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
       <!-- heading  -->
       <div
@@ -363,14 +363,14 @@
       <!-- -----------------------------  -->
     </section>
     <!-- Why Take This Course? -->
-    <section class="bg-secondary w-full relative">
+    <section data-aos="fade-up" class="bg-secondary w-full relative">
       <img
         src="./assets/background1.png"
         class="absolute inset-0 w-full h-full object-cover"
         alt=""
       />
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -424,7 +424,7 @@
     <!-- Course Details  -->
     <section class="relative w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -449,10 +449,10 @@
     <!-- Beginners Level I: -->
     <section class="relative w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 pb-10 md:pb-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 pb-10 md:pb-20"
       >
         <!-- heading  -->
-        <h2 class="text-primary heading-font text-3xl pb-5">
+        <h2 class="text-primary heading-font font-semibold text-3xl pb-5">
           Beginners Level I:
         </h2>
         <!-- content  -->
@@ -556,7 +556,7 @@
     <!-- Quote  -->
     <section class="relative w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:pb-16"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:pb-16"
       >
         <!-- content  -->
         <p class="text-center heading-font text-3xl">
@@ -571,10 +571,12 @@
     <!-- Level II - Master Level -->
     <section class="relative w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 pb-10 md:pb-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 pb-10 md:pb-20"
       >
         <!-- heading  -->
-        <h2 class="text-primary heading-font md:text-right text-3xl pb-5">
+        <h2
+          class="text-primary heading-font font-semibold md:text-right text-3xl pb-5"
+        >
           Level II - Master Level
         </h2>
         <!-- content  -->
@@ -684,14 +686,14 @@
       </div>
     </section>
     <!--Quote 1 -->
-    <section class="bg-secondary w-full relative">
+    <section data-aos="fade-up" class="bg-secondary w-full relative">
       <img
         src="./assets/background1.png"
         class="absolute inset-0 w-full h-full object-cover"
         alt=""
       />
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20 md:pb-40"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20 md:pb-40"
       >
         <p class="text-center heading-font text-3xl">
           "A certificate of completion that acknowledges your commitment, skill
@@ -724,7 +726,7 @@
     <!-- Course Fee  -->
     <section class="w-full relative">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:pb-16"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:pb-16"
       >
         <!-- heading  -->
         <div
@@ -840,14 +842,14 @@
       </div>
     </section>
     <!-- Course Details  -->
-    <section class="relative bg-secondary w-full">
+    <section data-aos="fade-up" class="relative bg-secondary w-full">
       <img
         src="./assets/bacground.png"
         class="absolute inset-0 object-cover w-full h-full"
         alt="back"
       />
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -878,7 +880,8 @@
     </section>
     <!-- Connect on Instagram @alignwithnoopur Section  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10"
     >
       <div
         class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
@@ -925,7 +928,7 @@
     <!-- CONTACT US  -->
     <section class="bg-secondary w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -975,7 +978,9 @@
         </form>
       </div>
     </section>
-    <footer class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32">
+    <footer
+      class="w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32"
+    >
       <!-- line 1  -->
       <div
         class="flex md:justify-between items-center flex-wrap gap-2 max-md:flex-col justify-center py-4 border-b border-black"
@@ -1147,5 +1152,10 @@
         <p>Copyright  2024 NOOPUR JAIN. Designed by SPRITE GENIX</p>
       </div>
     </footer>
+    <!-- aos scripts  -->
+    <script src="./aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

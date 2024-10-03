@@ -8,12 +8,14 @@
       name="description"
       content="Heal yourself and create a life worth living"
     />
+    <link href="./aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="tailwind.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="output.css" />
     <!--defer  Script  -->
     <script
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -37,7 +39,7 @@
         <a href="/" class="text-white hover:scale-105">Home</a>
         <a href="/about.html" class="text-white hover:scale-105">About</a>
         <div class="relative group">
-          <a href="/courses.html" class="text-white hover:scale-105">Courses</a>
+          <p class="text-white hover:scale-105 cursor-pointer">Courses</p>
           <ul
             class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
           >
@@ -107,17 +109,17 @@
             >About</a
           >
           <div class="">
-            <div class="w-full flex justify-between border-b border-zinc-300">
-              <a
-                href="/courses.html"
-                class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
-                >Courses</a
-              >
+            <div
+              class="w-full flex justify-between border-b border-zinc-300"
+              id="coursesButton"
+            >
+              <p class="border-b pl-5 border-zinc-300 py-1 text-primary">
+                Courses
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
                 class="w-4 mr-5"
-                id="coursesButton"
               >
                 <path
                   d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
@@ -185,7 +187,8 @@
     <!-- ------------------------------------------  -->
     <!-- Welcome Section  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
       <!-- heading  -->
       <div
@@ -196,14 +199,14 @@
         <div class="w-[20%] h-0 border-t border-primary"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
-        <div class="w-full flex max-md:justify-center">
+        <div data-aos="fade-right" class="w-full flex max-md:justify-center">
           <img
             src="./assets/banners/Rectangle 53.png"
             alt=""
             class="w-full object-cover"
           />
         </div>
-        <div class="space-y-10 relative text-zinc-700">
+        <div data-aos="fade-left" class="space-y-10 relative text-zinc-700">
           <p>
             Having worked with so many beautiful souls, guiding them through
             their path to ascension, growth and light - I now like to call
@@ -241,9 +244,9 @@
     </section>
     <!-- -----------------------------------------------------  -->
     <!-- WORK wITH NOOPUR  -->
-    <section class="bg-secondary w-full">
+    <section data-aos="fade-up" class="bg-secondary w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -257,7 +260,7 @@
         </div>
         <!-- content  -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
-          <div class="space-y-5 order-2 md:order-1">
+          <div data-aos="fade-right" class="space-y-5 order-2 md:order-1">
             <h2
               class="heading-font text-3xl md:text-4xl capitalize flex gap-5 relative text-primary"
             >
@@ -296,7 +299,10 @@
               </div>
             </div>
           </div>
-          <div class="w-full flex max-md:justify-center order-1 md:order-2">
+          <div
+            data-aos="fade-left"
+            class="w-full flex max-md:justify-center order-1 md:order-2"
+          >
             <img
               src="./assets/banners/Rectangle 53.png"
               alt=""
@@ -308,7 +314,8 @@
     </section>
     <!-- Courses Section  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
       <!-- heading  -->
       <div
@@ -322,14 +329,14 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72 pb-20 md:pb-32"
       >
-        <div class="w-full flex max-md:justify-center">
+        <div data-aos="fade-right" class="w-full flex max-md:justify-center">
           <img
             src="./assets/banners/Rectangle 53.png"
             alt=""
             class="w-full object-cover"
           />
         </div>
-        <div class="space-y-10 relative">
+        <div data-aos="fade-left" class="space-y-10 relative">
           <h2
             class="heading-font text-3xl md:text-4xl capitalize flex gap-5 relative text-primary"
           >
@@ -368,7 +375,10 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72 pb-20 md:pb-32"
       >
-        <div class="space-y-10 relative order-2 md:order-1">
+        <div
+          data-aos="fade-right"
+          class="space-y-10 relative order-2 md:order-1"
+        >
           <h2
             class="heading-font text-3xl md:text-4xl capitalize flex gap-5 relative text-primary"
           >
@@ -401,7 +411,10 @@
             />
           </div>
         </div>
-        <div class="w-full flex max-md:justify-center order-1 md:order-2">
+        <div
+          data-aos="fade-left"
+          class="w-full flex max-md:justify-center order-1 md:order-2"
+        >
           <img
             src="./assets/banners/Rectangle 53.png"
             alt=""
@@ -411,14 +424,14 @@
       </div>
       <!-- -----------------------------  -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-72">
-        <div class="w-full flex max-md:justify-center">
+        <div data-aos="fade-right" class="w-full flex max-md:justify-center">
           <img
             src="./assets/banners/Rectangle 53.png"
             alt=""
             class="w-full object-cover"
           />
         </div>
-        <div class="space-y-10 relative">
+        <div data-aos="fade-left" class="space-y-10 relative">
           <h2
             class="heading-font text-3xl md:text-4xl capitalize flex gap-5 relative text-primary"
           >
@@ -459,12 +472,12 @@
       <!-- -----------------------------  -->
     </section>
     <!-- Free Offerings 1  -->
-    <section class="bg-secondary w-full relative">
+    <section data-aos="fade-up" class="bg-secondary w-full relative">
       <div
         class="max-md:hidden absolute md:w-[23rem] 3xl:w-[37rem] bg-[#b6a47c] top-0 right-0 h-full"
       ></div>
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -479,6 +492,7 @@
         <!-- content  -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-56">
           <div
+            data-aos="fade-right"
             class="space-y-5 order-2 md:order-1 flex flex-col h-full justify-center"
           >
             <div>
@@ -521,6 +535,7 @@
             </div>
           </div>
           <div
+            data-aos="fade-left"
             class="w-full flex justify-center md:justify-end-end order-1 md:order-2"
           >
             <div class="border border-primary rounded-full p-3 md:p-10 h-max">
@@ -537,16 +552,17 @@
       </div>
     </section>
     <!-- Free Offerings 2 -->
-    <section class="bg-secondary w-full relative">
+    <section data-aos="fade-up" class="bg-secondary w-full relative">
       <div
         class="max-md:hidden absolute md:w-[23rem] 3xl:w-[37rem] bg-[#b6a47c] top-0 left-0 h-full"
       ></div>
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- content  -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-56">
           <div
+            data-aos="fade-right"
             class="w-full flex justify-center md:justify-end-end order-2 md:order-1"
           >
             <div class="border border-primary rounded-full p-3 md:p-10 h-max">
@@ -560,6 +576,7 @@
             </div>
           </div>
           <div
+            data-aos="fade-left"
             class="space-y-5 order-1 md:order-2 flex flex-col h-full justify-center"
           >
             <div>
@@ -606,7 +623,8 @@
     </section>
     <!-- Events & Workshops Section  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
       <!-- heading  -->
       <div
@@ -722,9 +740,9 @@
       </div>
     </section>
     <!-- Testimonials   -->
-    <section class="bg-secondary w-full">
+    <section data-aos="fade-up" class="bg-secondary w-full">
       <div
-        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div class="mb-5 md:mb-10">
@@ -844,7 +862,8 @@
     </section>
     <!-- Connect on Instagram @alignwithnoopur Section  -->
     <section
-      class="bg-white relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
       <!-- heading  -->
       <div
@@ -890,9 +909,9 @@
       </div>
     </section>
     <!-- CONTACT US  -->
-    <section class="bg-secondary w-full">
+    <section data-aos="fade-up" class="bg-secondary w-full">
       <div
-        class="relative w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
       >
         <!-- heading  -->
         <div
@@ -942,7 +961,9 @@
         </form>
       </div>
     </section>
-    <footer class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32">
+    <footer
+      class="w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32"
+    >
       <!-- line 1  -->
       <div
         class="flex md:justify-between items-center flex-wrap gap-2 max-md:flex-col justify-center py-4 border-b border-black"
@@ -1114,5 +1135,10 @@
         <p>Copyright  2024 NOOPUR JAIN. Designed by SPRITE GENIX</p>
       </div>
     </footer>
+    <!-- aos scripts  -->
+    <script src="./aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
