@@ -28,6 +28,16 @@ li {
   font-size: 1.25rem;
   color: #3f3f46;
 }
+
+/* Custom Tailwind CSS to hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* ------------------------  */
 .text-color-black {
   li {
     color: #000000;

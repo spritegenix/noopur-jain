@@ -6,6 +6,8 @@ data-aos="fade-up"
 data-aos="fade-right"
 data-aos="fade-left"
 
+data-aos="flip-left"
+
     <link href="./aos.css" rel="stylesheet" />
         <!-- aos scripts  -->
     <script src="./aos.js"></script>

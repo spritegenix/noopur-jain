@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      NOOPUR JAIN | Destiny vs. Fate: A Guide to Understanding Your Path
+    </title>
+    <meta
+      name="description"
+      content="Heal yourself and create a life worth living"
+    />
+    <link href="../aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="../tailwind.js"></script>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <!--defer  Script  -->
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="../script.js" defer></script>
+    <script src="../swiper.js" defer></script>
+  </head>
+  <body>
+    <!-- Desktop Header -->
+    <header
+      class="bg-primary w-full hidden lg:block fixed top-0 left-0 right-0 z-50 h-24"
+    >
+      <nav
+        class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 flex justify-between items-center text-lg gap-5 py-3"
+      >
+        <a href="/" class="text-white hover:scale-105">Home</a>
+        <a href="/about.html" class="text-white hover:scale-105">About</a>
+        <div class="relative group">
+          <p class="text-white hover:scale-105 cursor-pointer">Courses</p>
+          <ul
+            class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
+          >
+            <a
+              href="/sound-healing.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Sound Healing</a
+            >
+            <a
+              href="/meditation-training-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Meditation Training Courses
+            </a>
+            <a
+              href="/reiki-initiation-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Reiki Initiation Courses</a
+            >
+          </ul>
+        </div>
+
+        <a href="/events.html" class="text-white hover:scale-105">Events</a>
+        <a href="/" class="text-white">
+          <img src="../assets/logo.png" alt="logo" />
+        </a>
+        <a href="/work-with-nooper.html" class="text-white hover:scale-105"
+          >Work With Noopur
+        </a>
+        <a href="/blogs.html" class="text-white hover:scale-105">Blog </a>
+        <a href="/contact-us.html" class="text-white hover:scale-105"
+          >Contact
+        </a>
+      </nav>
+    </header>
+    <!-- Mobile Header  -->
+    <header
+      class="bg-primary w-full lg:hidden fixed top-0 left-0 right-0 z-50 h-16"
+    >
+      <nav class="w-full p-5 flex items-center justify-between py-3">
+        <img src="../assets/logo.png" alt="logo" class="max-w-44" />
+        <!-- Hamburger Icon -->
+        <div class="lg:hidden">
+          <button
+            id="menuButton"
+            class="text-white focus:outline-none flex flex-col gap-1"
+          >
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="bg-white w-full lg:hidden fixed top-14 left-0 hidden"
+      >
+        <nav class="flex flex-col w-full text-lg text-primary font-semibold">
+          <a
+            href="/"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >About</a
+          >
+          <div class="">
+            <div
+              class="w-full flex justify-between border-b border-zinc-300"
+              id="coursesButton"
+            >
+              <p class="border-b pl-5 border-zinc-300 py-1 text-primary">
+                Courses
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="w-4 mr-5"
+              >
+                <path
+                  d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <ul class="flex flex-col" id="coursesMenu">
+              <a
+                href="/sound-healing.html"
+                class="px-10 py-2 hover:bg-[#8c793a] border-b border-zinc-300 hover:text-white"
+                >Sound Healing</a
+              >
+              <a
+                href="/meditation-training-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Meditation Training Courses
+              </a>
+              <a
+                href="/reiki-initiation-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Reiki Initiation Courses</a
+              >
+            </ul>
+          </div>
+          <a
+            href="/events.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Events</a
+          >
+          <a
+            href="/work-with-noopur.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Work With Noopur</a
+          >
+          <a href="/blogs.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Blog</a
+          >
+          <a href="/contact-us.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- -----------------------------------------------------  -->
+    <!-- Blogs  -->
+    <section
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-16 lg:py-32"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
+      >
+        <h2 class="heading-font text-3xl md:text-5xl">
+          Destiny vs. Fate: A Guide to Understanding Your Path
+        </h2>
+      </div>
+      <div class="grid grid-cols-12 gap-5 lg:h-screen lg:overflow-hidden">
+        <div
+          class="col-span-12 lg:col-span-10 space-y-5 text-justify overflow-y-scroll h-full scrollbar-hide"
+        >
+          <img
+            src="../assets/blogs/b1.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p>
+            <span class="italic">Hello soul family,</span> <br />
+            Have you ever found yourself wondering whether you're truly living
+            your destiny or merely following the path laid out by fate? This is
+            a question many of my students and clients ask, and it’s one that
+            I've pondered deeply throughout my journey as a healer, mystic, and
+            spiritual mentor. Today, I want to share some insights that can help
+            you understand and differentiate between destiny and fate, and how
+            you can navigate your own life path with greater awareness and
+            intention.
+          </p>
+          <img
+            src="../assets/blogs/b1.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p class="font-semibold">What is Destiny?</p>
+          <p>
+            Destiny is often seen as the higher purpose or calling that your
+            soul has chosen before incarnating into this life. It’s the path
+            that aligns with your true self and your deepest desires. When you
+            are living your destiny, you feel a sense of fulfillment, joy, and
+            alignment with your inner being. You are following a path that feels
+            right, even if it’s challenging at times.
+          </p>
+          <p>
+            Think of destiny as the grand blueprint of your life, a vision of
+            what you can achieve if you fully embrace your gifts and passions.
+          </p>
+          <p>
+            From my personal experience, discovering my destiny was not an
+            overnight revelation. It unfolded gradually as I listened to my
+            inner voice, embraced my passion for healing, and stepped into my
+            roles as a sound healer, Reiki master, meditation teacher, and
+            spiritual mentor. Each step on this path felt like coming home to
+            myself.
+          </p>
+          <p class="font-semibold">What is Fate?</p>
+          <p>
+            Fate, on the other hand, is often perceived as the set of
+            circumstances and events that happen to you, sometimes seemingly
+            beyond your control. It can feel like a pre-determined path that you
+            are bound to follow, influenced by external forces and societal
+            expectations. Fate is what brings challenges and opportunities our
+            way, but it doesn't dictate our response to them. It’s the raw
+            material from which we can create our destiny.
+          </p>
+          <p>
+            In my practice, I've encountered many instances where fate played a
+            pivotal role. For example, meeting certain individuals or
+            encountering specific situations that initially seemed coincidental
+            but later revealed themselves as crucial turning points in my
+            spiritual journey. These experiences taught me that while fate
+            brings us to crossroads, it’s our choices that pave the way forward.
+          </p>
+          <img
+            src="../assets/blogs/b1.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p class="font-semibold">
+            How to Differentiate Between Destiny and Fate
+          </p>
+          <p>
+            Understanding whether you are living your destiny or simply
+            following fate can be a transformative realization. Here are some
+            ways to differentiate between the two:
+          </p>
+          <ol class="pl-5 list-decimal">
+            <li>
+              <span class="font-medium"
+                >Inner Alignment vs. External Circumstances:</span
+              >
+              Destiny often feels like an inner calling, a deep-seated purpose
+              that aligns with your true self. Fate, meanwhile, is about
+              external events and circumstances that you encounter.
+              <span class="italic"
+                >Reflect on whether your actions resonate with your inner truth
+                or if they are reactions to external pressures.</span
+              >
+            </li>
+            <li>
+              <span class="font-medium"
+                >Active Choice vs. Passive Acceptance:</span
+              >
+              Living your destiny involves making conscious choices that align
+              with your values and goals. Following fate, however, can sometimes
+              mean passively accepting whatever comes your way without
+              questioning or taking proactive steps.
+              <span class="italic"
+                >Consider if you are actively shaping your life or merely
+                reacting to it.</span
+              >
+            </li>
+            <li>
+              <span class="font-medium">Fulfillment vs. Resignation:</span>
+              Pursuing your destiny brings a sense of fulfillment and joy, even
+              amidst challenges. Following fate can often lead to a feeling of
+              resignation or lack of control.
+              <span class="italic"
+                >Pay attention to your emotional state – are you energized and
+                motivated, or do you feel stuck and powerless?</span
+              >
+            </li>
+          </ol>
+          <img
+            src="../assets/blogs/b1.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p class="font-semibold">My Journey: Embracing Destiny Over Fate</p>
+          <p>
+            In my personal journey, I’ve learned to distinguish between destiny
+            and fate through the practice of mindfulness and meditation. By
+            tuning into my inner self and listening to my heart, I’ve been able
+            to recognize when I’m living in alignment with my true purpose.
+          </p>
+          <p>
+            For instance, when I decided to become a healer and follow the
+            mystic path , it wasn’t a decision based on external circumstances
+            or societal expectations. It was a deep, intuitive knowing that this
+            was my path. Despite the challenges and uncertainties, the
+            fulfillment I’ve experienced reaffirmed that I was living my
+            destiny, not just following fate.
+          </p>
+          <img
+            src="../assets/blogs/b1.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p class="font-semibold">Practices for Embracing Your Destiny</p>
+          <ol>
+            <li>
+              <span class="font-medium">Meditate Regularly:</span> Meditation
+              helps you connect with your inner self and gain clarity on your
+              true purpose. It quiets the mind and allows your intuition to
+              guide you.
+            </li>
+            <li>
+              <span class="font-medium">Reflect on Your Passions:</span> What
+              activities make you feel alive and fulfilled? These are often
+              clues to your destiny.
+            </li>
+            <li>
+              <span>Set Intentions:</span> Be clear about what you want to
+              achieve and take proactive steps towards your goals. Intentions
+              align your actions with your inner purpose.
+            </li>
+            <li>
+              <span class="font-medium">Embrace Challenges:</span> See
+              challenges as opportunities for growth rather than obstacles. They
+              are often fate’s way of steering you towards your destiny.
+            </li>
+            <li>
+              <span class="font-medium">Seek Guidance:</span> Don’t hesitate to
+              seek support from mentors or spiritual guides who can offer
+              insights and help you stay aligned with your path.
+            </li>
+          </ol>
+          <p>
+            Understanding the difference between destiny and fate can empower
+            you to take control of your life’s journey. By aligning with your
+            true purpose and making conscious choices, you can live a life of
+            fulfillment and joy.
+          </p>
+          <p>
+            Remember, your destiny is not a distant dream but a present reality
+            waiting to be embraced. Trust your inner voice, take proactive
+            steps, and let your unique light shine brightly.
+          </p>
+          <p>
+            If you are ready to dive deeper, explore some course you might like
+            <a
+              target="_blank"
+              class="text-blue-600 underline hover:text-blue-800"
+              href="/meditation-training-courses.html"
+              >here</a
+            >
+          </p>
+          <p class="italic">With love and light.</p>
+        </div>
+        <aside class="col-span-2 max-lg:hidden overflow-hidden">
+          <div class="sticky top-0 space-y-5">
+            <h2 class="heading-font text-2xl text-center">Suggested Blogs</h2>
+            <ul class="space-y-5">
+              <li>
+                <img
+                  src="../assets/banners/banner.png"
+                  alt=""
+                  class="w-full h-36 object-cover"
+                />
+                <div
+                  class="flex flex-col text-center justify-center items-center py-2"
+                >
+                  <a
+                    href="./blog1.html"
+                    class="text-primary heading-font text-2xl"
+                  >
+                    The beautiful art of Yoni Steaming
+                  </a>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="../assets/banners/banner.png"
+                  alt=""
+                  class="w-full h-36 object-cover"
+                />
+                <div
+                  class="flex flex-col text-center justify-center items-center py-2"
+                >
+                  <a
+                    href="./blog1.html"
+                    class="text-primary heading-font text-2xl"
+                  >
+                    The beautiful art of Yoni Steaming
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- YOU MAY ALSO LIKE  -->
+    <section
+      data-aos="fade-up"
+      class="bg-primary relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-16 lg:py-32"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-10"
+      >
+        <div class="w-[20%] h-0 border-t border-primary"></div>
+        <h2 class="heading-font text-3xl md:text-5xl text-white">
+          YOU MAY ALSO LIKE
+        </h2>
+        <div class="w-[20%] h-0 border-t border-primary"></div>
+      </div>
+      <!-- Slider main container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div>
+          <img
+            src="../assets/banners/banner.png"
+            alt=""
+            class="w-full h-80 object-cover"
+          />
+          <div
+            class="flex flex-col text-center justify-center items-center py-2"
+          >
+            <p>Wellness, Lifestyle, Plant Ally</p>
+            <a
+              href="./blog1.html"
+              class="text-primary heading-font text-3xl text-white"
+            >
+              The beautiful art of Yoni Steaming
+            </a>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../assets/banners/banner.png"
+            alt=""
+            class="w-full h-80 object-cover"
+          />
+          <div
+            class="flex flex-col text-center justify-center items-center py-2"
+          >
+            <p>Wellness, Lifestyle, Plant Ally</p>
+            <a
+              href="./blog1.html"
+              class="text-primary heading-font text-3xl text-white"
+            >
+              The beautiful art of Yoni Steaming
+            </a>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../assets/banners/banner.png"
+            alt=""
+            class="w-full h-80 object-cover"
+          />
+          <div
+            class="flex flex-col text-center justify-center items-center py-2"
+          >
+            <p>Wellness, Lifestyle, Plant Ally</p>
+            <a
+              href="./blog1.html"
+              class="text-primary heading-font text-3xl text-white"
+            >
+              The beautiful art of Yoni Steaming
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT US  -->
+    <section data-aos="fade-up" class="bg-secondary w-full">
+      <div
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            CONTACT US
+          </h2>
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- Form  -->
+        <form
+          action=""
+          method="post"
+          class="max-w-screen-md mx-auto space-y-8 heading-font"
+        >
+          <p>Stay up to date with Noopur Jain.</p>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Name"
+            />
+          </div>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Email"
+            />
+          </div>
+          <div class="flex justify-between relative">
+            <button
+              type="submit"
+              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+            >
+              Connect With Me
+            </button>
+            <div
+              class="w-full absolute top-1/2 h-0 border-t border-primary"
+            ></div>
+            <img
+              src="../assets/icons/circle-texture.png"
+              alt=""
+              class="relative z-10 object-contain"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer
+      class="w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32"
+    >
+      <!-- line 1  -->
+      <div
+        class="flex md:justify-between items-center flex-wrap gap-2 max-md:flex-col justify-center py-4 border-b border-black"
+      >
+        <div class="flex gap-2 items-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="../assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="socials"
+              src="../assets/icons/facebook logo.png"
+              alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="../assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="../assets/icons/youtube-logo.png" alt=""
+          /></a>
+        </div>
+        <img
+          src="../assets/footer-logo.png"
+          class="object-contain"
+          alt="footer-logo"
+        />
+        <div class="flex gap-2">
+          <div class="w-full h-min max-w-sm min-w-[200px]">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b-2 border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Type here..."
+            />
+          </div>
+          <button
+            class="px-2 py-1 bg-primary hover:bg-primary-hover text-white text-nowrap h-min"
+          >
+            JOIN US
+          </button>
+        </div>
+      </div>
+      <!-- line 2  -->
+      <div
+        class="flex justify-between gap-5 flex-wrap py-4 border-b border-black"
+      >
+        <!-- col-span-1  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              ABOUT Noopur jain
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/location icon.png" alt="" />
+              <p>India</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/call icon.png" alt="" />
+              <a href="tel:+91 8957865554">+91 8957865554</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/e mail icon.png" alt="" />
+              <a href="mailto:@Noopurjain.com">@Noopurjain.com</a>
+            </li>
+          </ul>
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              Open Hours
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <p>Monday to Friday 08:00 - 20:00</p>
+        </div>
+        <!-- col-span-2  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              IMPORTANT LINKS
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4 uppercase">
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/work-with-nooper.html" class="">Work With Noopur</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/about-us.html" class="hover:text-primary">about us</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/blogs.html" class="hover:text-primary">blogs</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/events.html" class="hover:text-primary">events</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/courses.html" class="hover:text-primary">courses</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/contact-us.html" class="hover:text-primary"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- col-span-3  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              RECENT POST
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-5 flex flex-col">
+            <a
+              href="#"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16">
+                <img
+                  src="../assets/post/post-1 img.png"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Lorem ipsum</p>
+                <p class="flex gap-2">
+                  <img
+                    src="../assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16">
+                <img
+                  src="../assets/post/post-1 img.png"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Lorem ipsum</p>
+                <p class="flex gap-2">
+                  <img
+                    src="../assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <!-- line 3  -->
+      <div class="text-center text-primary py-4">
+        <p>Copyright  2024 NOOPUR JAIN. Designed by SPRITE GENIX</p>
+      </div>
+    </footer>
+    <!-- aos scripts  -->
+    <script src="../aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
