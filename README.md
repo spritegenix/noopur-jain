@@ -14,3 +14,6 @@ data-aos="flip-left"
     <script>
       AOS.init();
     </script>
+
+
+    bg-black bg-opacity-30 inset-0 justify-end
