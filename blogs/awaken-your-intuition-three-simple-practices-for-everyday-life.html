@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      NOOPUR JAIN | Awaken Your Intuition - Three Simple Practices for Everyday
+      Life
+    </title>
+    <meta
+      name="description"
+      content="Heal yourself and create a life worth living"
+    />
+    <link href="../aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="../tailwind.js"></script>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <!--defer  Script  -->
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="../script.js" defer></script>
+    <script src="../swiper.js" defer></script>
+  </head>
+  <body>
+    <!-- Desktop Header -->
+    <header
+      class="bg-primary w-full hidden lg:block fixed top-0 left-0 right-0 z-50 h-24"
+    >
+      <nav
+        class="w-full max-w-screen-2xl mx-auto px-5 md:px-16 lg:px-32 flex justify-between items-center text-lg gap-5 py-3"
+      >
+        <a href="/" class="text-white hover:scale-105">Home</a>
+        <a href="/about.html" class="text-white hover:scale-105">About</a>
+        <div class="relative group">
+          <p class="text-white hover:scale-105 cursor-pointer">Courses</p>
+          <ul
+            class="absolute top-full hidden group-hover:flex flex-col text-nowrap bg-white border border-zinc-400"
+          >
+            <a
+              href="/sound-healing.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Sound Healing</a
+            >
+            <a
+              href="/meditation-training-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Meditation Training Courses
+            </a>
+            <a
+              href="/reiki-initiation-courses.html"
+              class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+              >Reiki Initiation Courses</a
+            >
+          </ul>
+        </div>
+
+        <a href="/events.html" class="text-white hover:scale-105">Events</a>
+        <a href="/" class="text-white">
+          <img src="../assets/logo.png" alt="logo" />
+        </a>
+        <a href="/work-with-noopur.html" class="text-white hover:scale-105"
+          >Work With Noopur
+        </a>
+        <a href="/blogs.html" class="text-white hover:scale-105">Blog </a>
+        <a href="/contact-us.html" class="text-white hover:scale-105"
+          >Contact
+        </a>
+      </nav>
+    </header>
+    <!-- Mobile Header  -->
+    <header
+      class="bg-primary w-full lg:hidden fixed top-0 left-0 right-0 z-50 h-16"
+    >
+      <nav class="w-full p-5 flex items-center justify-between py-3">
+        <img src="../assets/logo.png" alt="logo" class="max-w-44" />
+        <!-- Hamburger Icon -->
+        <div class="lg:hidden">
+          <button
+            id="menuButton"
+            class="text-white focus:outline-none flex flex-col gap-1"
+          >
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="bg-white w-full lg:hidden fixed top-14 left-0 hidden"
+      >
+        <nav class="flex flex-col w-full text-lg text-primary font-semibold">
+          <a
+            href="/"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >About</a
+          >
+          <div class="">
+            <div
+              class="w-full flex justify-between border-b border-zinc-300"
+              id="coursesButton"
+            >
+              <p class="border-b pl-5 border-zinc-300 py-1 text-primary">
+                Courses
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="w-4 mr-5"
+              >
+                <path
+                  d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                />
+              </svg>
+            </div>
+            <ul class="flex flex-col" id="coursesMenu">
+              <a
+                href="/sound-healing.html"
+                class="px-10 py-2 hover:bg-[#8c793a] border-b border-zinc-300 hover:text-white"
+                >Sound Healing</a
+              >
+              <a
+                href="/meditation-training-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Meditation Training Courses
+              </a>
+              <a
+                href="/reiki-initiation-courses.html"
+                class="px-10 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
+                >Reiki Initiation Courses</a
+              >
+            </ul>
+          </div>
+          <a
+            href="/events.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Events</a
+          >
+          <a
+            href="/work-with-noopur.html"
+            class="border-b pl-5 border-zinc-300 py-1 hover:bg-primary hover:text-white"
+            >Work With Noopur</a
+          >
+          <a href="/blogs.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Blog</a
+          >
+          <a href="/contact-us.html" class="border-b pl-5 py-1 border-zinc-300"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- -----------------------------------------------------  -->
+    <!-- Blogs  -->
+    <section
+      data-aos="fade-up"
+      class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-16 lg:py-32"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-20"
+      >
+        <h2 class="heading-font text-3xl md:text-5xl">
+          Awaken Your Intuition - Three Simple Practices for Everyday Life
+        </h2>
+      </div>
+      <div class="grid grid-cols-12 gap-5 lg:h-screen lg:overflow-hidden">
+        <div
+          class="col-span-12 lg:col-span-10 space-y-5 text-justify overflow-y-scroll h-full scrollbar-hide"
+        >
+          <p>
+            Have you ever felt a deep inner knowing, a gut feeling guiding you,
+            but you weren’t sure how to fully trust it? That’s your intuition,
+            your inner compass. The more we nurture it, the more powerful and
+            reliable it becomes in guiding us through life. Whether you’re
+            making small day-to-day decisions or navigating major life shifts,
+            strengthening your intuition can open up a world of clarity and
+            alignment with your true self.
+          </p>
+          <p>
+            Today, I want to share three simple yet powerful practices that can
+            help you tune in, strengthen your intuitive abilities, and trust
+            that inner voice more fully. These techniques are not just about
+            connecting with something mystical—they are deeply practical and can
+            bring clarity to all areas of your life, from personal and
+            professional decisions to spiritual growth.
+          </p>
+          <img
+            src="../assets/blogs/b41.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p class="font-semibold">
+            1. Silence Fast: Practise Silence for 6 Hours Once a Week
+          </p>
+          <p>
+            In our noisy world, it's easy to lose touch with that quiet inner
+            guidance that speaks through intuition. One of the best ways to
+            reconnect is through a "silence fast." This doesn’t just mean
+            refraining from speaking but also from the constant bombardment of
+            media, music, and conversations. Once a week, carve out six hours to
+            immerse yourself in complete silence.
+          </p>
+          <p>
+            What happens when you turn down the external noise? You create space
+            for your inner voice to rise. You’ll begin to hear the whispers of
+            your intuition more clearly. During this time, focus on being
+            present with yourself. Notice how your thoughts unfold. What
+            feelings emerge? You might be surprised at how much clearer your
+            decisions and insights become when you're not distracted by outside
+            chatter.
+          </p>
+          <p class="font-semibold">Practical Tip:</p>
+          <p>
+            Choose a time when you’re able to disconnect from responsibilities.
+            You could take a nature walk, sit in meditation, or simply enjoy the
+            quiet at home. Treat this silence fast as a sacred practice to let
+            your inner self speak.
+          </p>
+          <p class="font-semibold">
+            2. Practise Using Your Non-Dominant Hand for Daily Activities
+          </p>
+          <p>
+            This one might sound a little strange at first, but it’s incredibly
+            effective! When you use your non-dominant hand for routine tasks
+            like brushing your teeth, cleaning, or writing, you're forcing your
+            brain to step out of autopilot. This shifts you into a more mindful,
+            present state, which enhances your intuition.
+          </p>
+          <p>
+            By using the non-dominant hand, you stimulate the right hemisphere
+            of your brain, which is closely associated with creativity,
+            intuition, and emotion. It pushes you to be more aware, breaking old
+            patterns and opening yourself up to new ways of thinking and
+            perceiving.
+          </p>
+          <p class="font-semibold">Practical Tip:</p>
+          <p>
+            Start small by switching hands for tasks you usually do without
+            thinking. Notice the mindfulness this simple switch brings into your
+            day. As you do this, you may also notice heightened intuition in
+            other areas of your life.
+          </p>
+          <p class="font-semibold">
+            3. Sunrise and Sunset Meditation: Connect with Nature and the Sun’s
+            Energy
+          </p>
+          <p>
+            There’s something deeply powerful about beginning and ending your
+            day with the sun. Sunrise and sunset meditations are potent moments
+            to connect with your intuitive self. Nature has a way of grounding
+            us and bringing us back to our essence, and when you face the sun
+            during these quiet times of the day, you’re aligning yourself with
+            the natural rhythms of the earth.
+          </p>
+          <p>
+            Morning meditation as the sun rises helps set a clear, intuitive
+            tone for your day. You start fresh, aligned, and connected. Evening
+            meditation at sunset allows you to reflect, release, and recharge
+            your intuition as you prepare for the next day.
+          </p>
+          <p class="font-semibold">Practical Tip:</p>
+          <p>
+            If possible, practice outdoors, facing the sun. Simply sit quietly
+            and focus on your breath, letting the warmth and light of the sun
+            energize and clear your mind. Allow yourself to listen inwardly—what
+            is your intuition telling you during these quiet moments?
+          </p>
+          <p class="font-semibold">Trusting Your Intuition in Life</p>
+          <p>
+            These three practices—silence fasts, using your non-dominant hand,
+            and meditating with the sun—are simple but deeply effective ways to
+            tap into your intuitive power. Your intuition is always there,
+            waiting to guide you, whether it’s about making decisions, sensing
+            energies, or knowing your true path. The more you practice tuning
+            into it, the more reliable it becomes.
+          </p>
+          <p>
+            As you strengthen your intuition, you’ll notice how much easier it
+            is to trust yourself. You’ll be able to discern the best paths in
+            life with greater clarity and confidence, enhancing not just your
+            personal growth but your spiritual evolution as well.
+          </p>
+          <img
+            src="../assets/blogs/b41.jpg"
+            class="w-full object-cover h-[28rem]"
+            alt=""
+          />
+          <p class="font-semibold">Ready to Go Deeper?</p>
+          <p>
+            If you feel called to explore and strengthen your intuition on a
+            deeper level, I invite you to join my
+            <a
+              href="../meditation-training-courses.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
+              >Meditation Training Course</a
+            >. This course is designed to help you uncover your inner strength,
+            discover your true purpose, and learn techniques that will elevate
+            your intuitive and spiritual awareness. It’s an opportunity to tune
+            into your highest self and let your intuition guide you toward a
+            more fulfilled and aligned life.
+          </p>
+          <p>
+            Let’s walk this path together. Your inner wisdom is waiting for you.
+            <a
+              href="../work-with-noopur.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
+              >Click here</a
+            >!
+          </p>
+          <p class="italic">With love and light.</p>
+        </div>
+        <aside class="col-span-2 max-lg:hidden overflow-hidden">
+          <div class="sticky top-0 space-y-5">
+            <h2 class="heading-font text-2xl text-center">Suggested Blogs</h2>
+            <ul class="space-y-5">
+              <li>
+                <img
+                  src="../assets/blogs/b11.jpg"
+                  alt=""
+                  class="w-full h-36 object-cover"
+                />
+                <div
+                  class="flex flex-col text-center justify-center items-center py-2"
+                >
+                  <a
+                    href="./destiny-vs-fate-a-guide-to-understanding-your-path.html"
+                    class="text-primary heading-font text-xl"
+                  >
+                    Destiny vs. Fate: A Guide to Understanding Your Path
+                  </a>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="../assets/blogs/b21.jpg"
+                  alt=""
+                  class="w-full h-36 object-cover"
+                />
+                <div
+                  class="flex flex-col text-center justify-center items-center py-2"
+                >
+                  <a
+                    href="./how-do-you-know-you-are-emotionally-fit.html"
+                    class="text-primary heading-font text-xl"
+                  >
+                    How Do You Know You Are Emotionally Fit?
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- YOU MAY ALSO LIKE  -->
+    <section
+      data-aos="fade-up"
+      class="bg-primary relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-16 lg:py-32"
+    >
+      <!-- heading  -->
+      <div
+        class="flex items-center justify-center text-primary text-center gap-2 md:gap-5 mb-5 md:mb-20"
+      >
+        <div class="w-[20%] h-0 border-t border-primary"></div>
+        <h2 class="heading-font text-3xl md:text-5xl text-white">
+          YOU MAY ALSO LIKE
+        </h2>
+        <div class="w-[20%] h-0 border-t border-primary"></div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper swiperBlog h-[28rem]">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- b1  -->
+          <div class="swiper-slide w-full h-max">
+            <a
+              href="./destiny-vs-fate-a-guide-to-understanding-your-path.html"
+            >
+              <img
+                src="../assets/blogs/b11.jpg"
+                alt=""
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="flex flex-col text-center justify-center items-center py-2"
+              >
+                <p class="text-white heading-font text-3xl cursor-pointer">
+                  Destiny vs. Fate: A Guide to Understanding Your Path
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- b2  -->
+          <div class="swiper-slide w-full h-max">
+            <a
+              href="./is-energy-healing-for-everyone-the-ancient-ways-to-heal-yourself.html"
+            >
+              <img
+                src="../assets/blogs/b31.jpg"
+                alt=""
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="flex flex-col text-center justify-center items-center py-2"
+              >
+                <p class="text-white heading-font text-3xl cursor-pointer">
+                  Is Energy Healing for Everyone? - The Ancient Ways to Heal
+                  Yourself
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- b3  -->
+          <div class="swiper-slide w-full h-max">
+            <a href="./how-do-you-know-you-are-emotionally-fit.html">
+              <img
+                src="../assets/blogs/b21.jpg"
+                alt=""
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="flex flex-col text-center justify-center items-center py-2"
+              >
+                <p class="text-white heading-font text-3xl cursor-pointer">
+                  How Do You Know You Are Emotionally Fit?
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- b4  -->
+          <div class="swiper-slide w-full h-max">
+            <a
+              href="./which-meditation-to-do-at-different-times-of-the-day.html"
+            >
+              <img
+                src="../assets/blogs/b41.jpg"
+                alt=""
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="flex flex-col text-center justify-center items-center py-2"
+              >
+                <p class="text-white heading-font text-3xl cursor-pointer">
+                  Which meditation to do at different times of the day?
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- b5  -->
+          <div class="swiper-slide w-full h-max">
+            <a
+              href="./awaken-your-intuition-three-simple-practices-for-everyday-life.html"
+            >
+              <img
+                src="../assets/blogs/b51.jpg"
+                alt=""
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="flex flex-col text-center justify-center items-center py-2"
+              >
+                <p class="text-white heading-font text-3xl cursor-pointer">
+                  Awaken Your Intuition - Three Simple Practices for Everyday
+                  Life
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div
+          class="swiper-button-prev top-[38%] rounded-full bg-secondary p-2 h-12 w-12 after:text-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            class="p-1"
+          >
+            <path
+              d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
+            />
+          </svg>
+        </div>
+        <div
+          class="swiper-button-next top-[38%] rounded-full bg-secondary p-2 h-12 w-12 after:text-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            class="p-1"
+          >
+            <path
+              d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT US  -->
+    <section data-aos="fade-up" class="bg-secondary w-full">
+      <div
+        class="relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
+      >
+        <!-- heading  -->
+        <div
+          class="flex items-center justify-center text-center gap-2 md:gap-5 mb-5 md:mb-10"
+        >
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+          <h2 class="heading-font text-3xl md:text-5xl capitalize text-primary">
+            CONTACT US
+          </h2>
+          <div class="w-[20%] h-0 border-t border-primary"></div>
+        </div>
+        <!-- Form  -->
+        <form
+          action=""
+          method="post"
+          class="max-w-screen-md mx-auto space-y-8 heading-font"
+        >
+          <p>Stay up to date with Noopur Jain.</p>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Name"
+            />
+          </div>
+          <div class="w-full h-min">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Email"
+            />
+          </div>
+          <div class="flex justify-between relative">
+            <button
+              type="submit"
+              class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+            >
+              Connect With Me
+            </button>
+            <div
+              class="w-full absolute top-1/2 h-0 border-t border-primary"
+            ></div>
+            <img
+              src="../assets/icons/circle-texture.png"
+              alt=""
+              class="relative z-10 object-contain"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer
+      class="w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32"
+    >
+      <!-- line 1  -->
+      <div
+        class="flex md:justify-between items-center flex-wrap gap-2 max-md:flex-col justify-center py-4 border-b border-black"
+      >
+        <div class="flex gap-2 items-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="../assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img
+              class="socials"
+              src="../assets/icons/facebook logo.png"
+              alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="../assets/icons/insta-logo.png" alt=""
+          /></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            ><img class="socials" src="../assets/icons/youtube-logo.png" alt=""
+          /></a>
+        </div>
+        <img
+          src="../assets/footer-logo.png"
+          class="object-contain"
+          alt="footer-logo"
+        />
+        <div class="flex gap-2">
+          <div class="w-full h-min max-w-sm min-w-[200px]">
+            <input
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b-2 border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+              placeholder="Type here..."
+            />
+          </div>
+          <button
+            class="px-2 py-1 bg-primary hover:bg-primary-hover text-white text-nowrap h-min"
+          >
+            JOIN US
+          </button>
+        </div>
+      </div>
+      <!-- line 2  -->
+      <div
+        class="flex justify-between gap-5 flex-wrap py-4 border-b border-black"
+      >
+        <!-- col-span-1  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              ABOUT Noopur jain
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/location icon.png" alt="" />
+              <p>Rishikesh, India</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/call icon.png" alt="" />
+              <a href="tel:+91 8957865554">+91 8957865554</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/e mail icon.png" alt="" />
+              <a href="mailto:@Noopurjain.com">@Noopurjain.com</a>
+            </li>
+          </ul>
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              Open Hours
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <p>Monday to Friday 08:00 - 20:00</p>
+        </div>
+        <!-- col-span-2  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              IMPORTANT LINKS
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-4 uppercase">
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/work-with-noopur.html" class="">Work With Noopur</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/about-us.html" class="hover:text-primary">about us</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/blogs.html" class="hover:text-primary">blogs</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/events.html" class="hover:text-primary">events</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/#courses" class="hover:text-primary">courses</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="../assets/icons/right-arrow.png" alt="" />
+              <a href="/contact-us.html" class="hover:text-primary"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- col-span-3  -->
+        <div class="space-y-3">
+          <div class="py-2 space-y-1">
+            <h2 class="text-xl md:text-2xl heading-font text-primary">
+              RECENT POST
+            </h2>
+            <p class="w-20 border-t border-primary"></p>
+          </div>
+          <ul class="space-y-5 flex flex-col">
+            <a
+              href="./is-energy-healing-for-everyone-the-ancient-ways-to-heal-yourself.html"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16 overflow-hidden">
+                <img
+                  src="../assets/blogs/b31.JPG"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Is Energy Healing...</p>
+                <p class="flex gap-2">
+                  <img
+                    src="../assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+            <a
+              href="./destiny-vs-fate-a-guide-to-understanding-your-path.html"
+              class="flex gap-2 items-center border-b border-primary pb-4"
+            >
+              <div class="rounded-full w-16 h-16 overflow-hidden">
+                <img
+                  src="../assets/blogs/b11.jpg"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>Destiny vs. Fate...</p>
+                <p class="flex gap-2">
+                  <img
+                    src="../assets/icons/calender logo.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                  <span> 24 July, 2024</span>
+                </p>
+              </div>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <!-- line 3  -->
+      <div class="text-center text-primary py-4">
+        <p>Copyright  2024 NOOPUR JAIN. Designed by SPRITE GENIX</p>
+      </div>
+    </footer>
+    <!-- aos scripts  -->
+    <script src="../aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -4,7 +4,8 @@
   "description": "templete - https://dev24.kodesolution.com/visago/home-layout2/",
   "main": "swiper.js",
   "scripts": {
-    "build": "tailwindcss -i ./index.css -o ./output.css"
+    "build": "tailwindcss -i ./index.css -o ./output.css",
+     "watch": "tailwindcss -i ./index.css -o ./output.css --watch"
   },
   "keywords": [],
   "author": "",

@@ -12,7 +12,7 @@ menuButton.addEventListener("click", () => {
 coursesButton.addEventListener("click", () => {
   coursesMenu.classList.toggle("hidden");
 });
-
+// ---------------------------------------------------- //
 function scrollWithOffset(event) {
   event.preventDefault(); // Prevent default anchor behavior
   const targetId = event.currentTarget.getAttribute("href"); // Get target id from href
@@ -29,6 +29,7 @@ function scrollWithOffset(event) {
   }
 }
 
+// Image Modal
 function openModal(image) {
   const modal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modalImage");
@@ -39,4 +40,15 @@ function openModal(image) {
 function closeModal() {
   const modal = document.getElementById("imageModal");
   modal.classList.add("hidden"); // Hide the modal
+}
+
+// Contact Modal
+function contactModal() {
+  const modal = document.getElementById("contactModal");
+  modal.classList.remove("hidden");
+}
+
+function contactCloseModal() {
+  const modal = document.getElementById("contactModal");
+  modal.classList.add("hidden");
 }

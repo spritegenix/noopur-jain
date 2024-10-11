@@ -8,12 +8,12 @@
       name="description"
       content="Heal yourself and create a life worth living"
     />
+    <script src="tailwind.js"></script>
     <link href="./aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="tailwind.js"></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="output.css" />
     <!--defer  Script  -->
@@ -168,26 +168,29 @@
     <!-- banner section  -->
     <section class="bg-secondary relative pt-16 lg:pt-24">
       <img
-        src="./assets/Sound Healing PICS/DSC07194.jpg"
+        src="./assets/About (Meet Noopur)/P1126105.webp"
         alt=""
-        class="w-full h-72 md:h-[87vh] object-cover"
+        class="w-full h-72 md:h-[87vh] object-cover object-top"
       />
       <div
-        class="absolute bottom-0 px-5 text-center py-5 md:py-16 flex flex-col items-center w-full gap-10"
+        class="absolute inset-0 bg-black bg-opacity-30 px-5 text-center py-5 md:py-16 flex flex-col justify-end items-center w-full gap-10"
       >
         <h2 class="text-3xl md:text-5xl heading-font text-white font-semibold">
           Heal yourself and create a life worth living
         </h2>
-        <button
+        <a
+          href="#sound"
+          onclick="scrollWithOffset(event)"
           class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
         >
           Let’s get started
-        </button>
+        </a>
       </div>
     </section>
     <!-- ------------------------------------------  -->
     <!-- Sound Healing Course  -->
     <section
+      id="sound"
       data-aos="fade-up"
       class="bg-white relative w-full max-w-screen-2xl overflow-x-hidden mx-auto px-5 md:px-16 lg:px-32 py-10 md:py-20"
     >
@@ -449,7 +452,7 @@
               />
             </div>
             <ul
-              class="font-semibold li-bullets flex flex-col gap-y-3 md:pl-5 md:pr-20 py-5 md:py-10 relative z-10"
+              class="font-semibold li-bullets flex flex-col gap-y-3 md:pl-5 md:pr-24 py-5 md:py-10 relative z-10"
             >
               <li>Initiation Ritual and Basics of healing</li>
               <li>Introduction on Himalayan sound therapy</li>
@@ -561,7 +564,7 @@
       >
         <!-- content  -->
         <ul
-          class="li-bullets md:text-center flex flex-col md:items-center gap-4 heading-font font-semibold text-2xl"
+          class="li-bullets md:text-center !flex !flex-col md:items-center gap-5 heading-font font-semibold text-2xl"
         >
           <li class="md:!text-3xl">
             A certificate of completion that acknowledges your commitment, skill
@@ -626,10 +629,14 @@
                 </div>
                 <div class="space-y-5">
                   <p class="py-2 px-4 border-2 border-primary w-max">
-                    12,000 INR
+                    14,000 INR
                   </p>
                   <div class="flex justify-between relative">
-                    <a target="_blank" href="https://calendly.com/noopur-pearls/free_30min_alignmentcall" class="w-max relative z-10">
+                    <a
+                      target="_blank"
+                      href="https://calendly.com/noopur-pearls/free_30min_alignmentcall"
+                      class="w-max relative z-10"
+                    >
                       <button
                         class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
                       >
@@ -676,10 +683,14 @@
                 </div>
                 <div class="space-y-5">
                   <p class="py-2 px-4 border-2 border-primary w-max">
-                    15,000 INR
+                    16,000 INR
                   </p>
                   <div class="flex justify-between relative">
-                    <a target="_blank" href="https://calendly.com/noopur-pearls/free_30min_alignmentcall" class="w-max relative z-10">
+                    <a
+                      target="_blank"
+                      href="https://calendly.com/noopur-pearls/free_30min_alignmentcall"
+                      class="w-max relative z-10"
+                    >
                       <button
                         class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
                       >
@@ -726,10 +737,13 @@
                 </div>
                 <div class="space-y-5">
                   <p class="py-2 px-4 border-2 border-primary w-max">
-                    27,000 INR
+                    30,000 INR
                   </p>
                   <div class="flex justify-between relative">
-                    <a href="https://calendly.com/noopur-pearls/free_30min_alignmentcall" class="w-max relative z-10">
+                    <a
+                      href="https://calendly.com/noopur-pearls/free_30min_alignmentcall"
+                      class="w-max relative z-10"
+                    >
                       <button
                         class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
                       >
@@ -931,7 +945,7 @@
           <ul class="space-y-4">
             <li class="flex items-center gap-2">
               <img src="./assets/icons/location icon.png" alt="" />
-              <p>India</p>
+              <p>Rishikesh, India</p>
             </li>
             <li class="flex items-center gap-2">
               <img src="./assets/icons/call icon.png" alt="" />
@@ -1000,9 +1014,9 @@
               href="./blogs/is-energy-healing-for-everyone-the-ancient-ways-to-heal-yourself.html"
               class="flex gap-2 items-center border-b border-primary pb-4"
             >
-              <div class="rounded-full w-16 h-16">
+              <div class="rounded-full w-16 h-16 overflow-hidden">
                 <img
-                  src="./assets/post/post-1 img.png"
+                  src="./assets/blogs/b31.JPG"
                   class="w-full h-full object-cover"
                   alt=""
                 />
@@ -1023,9 +1037,9 @@
               href="./blogs/destiny-vs-fate-a-guide-to-understanding-your-path.html"
               class="flex gap-2 items-center border-b border-primary pb-4"
             >
-              <div class="rounded-full w-16 h-16">
+              <div class="rounded-full w-16 h-16 overflow-hidden">
                 <img
-                  src="./assets/post/post-1 img.png"
+                  src="./assets/blogs/b11.jpg"
                   class="w-full h-full object-cover"
                   alt=""
                 />
