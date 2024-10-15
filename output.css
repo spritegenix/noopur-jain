@@ -841,6 +841,10 @@ video {
   height: 4rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -919,6 +923,10 @@ video {
   width: 0px;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -976,6 +984,10 @@ video {
   max-width: 11rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .max-w-screen-2xl {
   max-width: 1536px;
 }
@@ -986,6 +998,10 @@ video {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .max-w-sm {
@@ -1093,10 +1109,6 @@ video {
 
 .gap-y-3 {
   row-gap: 0.75rem;
-}
-
-.gap-y-5 {
-  row-gap: 1.25rem;
 }
 
 .gap-y-52 {
@@ -1579,12 +1591,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1593,12 +1599,20 @@ video {
   g: �p�����.0��^���᫵?�;
 }
 
+.\[j\:\FFFD\FFFD\FFFD\FFFD\FFFD\FFFDRP\19\FFFDx\FFFD\FFFD\FFFD\FFFDJ\FFFDsSwG\] {
+  j: ������RP�x����J�sSwG;
+}
+
 .\[k9\:s\0\FFFD 9\7F\FFFD\FFFD\6\FFFD\FFFD\FFFD\FFFD\#\12\FFFD\F\FFFD\FFFD-\FFFD\FFFD 2\FFFDw\FFFD\FFFD\7CC\1E\FFFD\70D\FFFDs\2FE\FFFDSY\7F\FFFD d\FFFD 2\FFFDg\] {
   k9: s �9������#���-��2�w��ߌ�܍�s˾�SY�d�2�g;
 }
 
 .\[k\:\8\FFFD c\FFFD\FFFDgs\FFFDs\FFFD\FFFDXdr\F\] {
   k: �c��gs�s��Xdr;
+}
+
+.\[k\:L\FFFD\11\769\<\FFFD 0\#\FFFDZ\~\FFFD\=\FFFD\FFFD\20E\] {
+  k: L�ݩ<�0#�Z~�=��Ȏ;
 }
 
 .\[l\:\FFFDX\FFFD\FFFD\FFFDH\] {
@@ -1651,6 +1665,10 @@ video {
 
 .\[t\:\!N\FFFD\^\FFFD 8\FFFD\=\FFFD\16\FFFD\] {
   t: !N�^�8�=��;
+}
+
+.\[t\:\FFFD\FFFD\FFFD\5\1C9\FFFD Ayuc\<V\FFFD\FFFD\7F\2c \FFFD\5\0\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD F\] {
+  t: ���ǉ�Ayuc<V��,� ������F;
 }
 
 .\[u\:\F39F\1A\FFFD\FFFDw\FFFD-\>\] {
@@ -1932,11 +1950,6 @@ li {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
-.hover\:text-blue-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -1993,10 +2006,6 @@ li {
 
   .max-md\:justify-center {
     justify-content: center;
-  }
-
-  .max-md\:gap-y-10 {
-    row-gap: 2.5rem;
   }
 
   .max-md\:gap-y-5 {
@@ -2187,10 +2196,6 @@ li {
     margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
 
-  .md\:border-r {
-    border-right-width: 1px;
-  }
-
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -2270,6 +2275,10 @@ li {
 
   .md\:pr-24 {
     padding-right: 6rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .md\:pt-16 {
