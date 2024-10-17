@@ -50,6 +50,19 @@ Best regards,
 Noopur Jain
 ";
 
+// Define the paths for the files
+$file_to_attach = '';
+switch ($form_type) {
+    case '1':
+        $file_to_attach = 'assets/Free Offerings Pics/Full Moon Ritual Guidebook 11.pdf';
+        break;
+    case '2':
+        $file_to_attach = 'assets/Free Offerings Pics/Release & Reflect Full Moon Journal 12.pdf';
+        break;
+    default:
+        break;
+}
+
 // Create a new PHPMailer instance
 $mail = new PHPMailer(true);
 
@@ -58,14 +71,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'linux898.defaultserverdns.com'; // Your SMTP server
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'hellohello@noopurjain.com'; // Your email address
+    $mail->Username   = 'hello@noopurjain.com'; // Your email address
     $mail->Password   = 'your-email-password'; // Replace with your actual email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SMTPS (SSL/TLS) for port 465
     $mail->Port       = 465; // SMTP port
 
     // Send email to the host (yourself)
-    $mail->setFrom('hellohello@noopurjain.com', 'Noopur Jain');
-    $mail->addAddress('hellohello@noopurjain.com'); // Where you want to receive the form submissions
+    $mail->setFrom('hello@noopurjain.com', 'Noopur Jain');
+    $mail->addAddress('hello@noopurjain.com'); // Where you want to receive the form submissions
 
     // Content for the host
     $mail->isHTML(false);
@@ -83,6 +96,11 @@ try {
     $mail->Subject = "Thank you for your submission";
     $mail->Body    = $user_email_content;
 
+    // Attach the PDF if applicable
+    if (!empty($file_to_attach)) {
+        $mail->addAttachment($file_to_attach);
+    }
+
     // Send the confirmation email to the user
     $mail->send();
 
@@ -90,4 +108,34 @@ try {
 } catch (Exception $e) {
     echo "Error: Unable to send email. Mailer Error: {$mail->ErrorInfo}";
 }
+
+// Download the appropriate file based on the form type
+function downloadFile($filePath) {
+    if (file_exists($filePath)) {
+        // Set headers to trigger file download
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="'.basename($filePath).'"');
+        header('Content-Length: ' . filesize($filePath));
+        header('Pragma: public');
+        flush(); // Flush system output buffer
+        readfile($filePath); // Read and output the file
+        exit;
+    } else {
+        echo "Error: File not found.";
+    }
+}
+
+// Trigger file download based on form_type
+switch ($form_type) {
+    case '1':
+        downloadFile('assets/Free Offerings Pics/Full Moon Ritual Guidebook 11.pdf');
+        break;
+    case '2':
+        downloadFile('assets/Free Offerings Pics/Release & Reflect Full Moon Journal 12.pdf');
+        break;
+    default:
+        break;
+}
+
 ?>

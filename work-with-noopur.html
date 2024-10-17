@@ -629,21 +629,27 @@
         </div>
         <!-- Form  -->
         <form
-          action=""
+          action="submit_form.php"
           method="post"
           class="max-w-screen-md mx-auto space-y-8 heading-font"
         >
+          <input type="hidden" name="form_type" value="contact_form_1" />
           <p>Stay up to date with Noopur Jain.</p>
           <div class="w-full h-min">
             <input
+              name="name"
               class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
               placeholder="Name"
+              required
             />
           </div>
           <div class="w-full h-min">
             <input
+              name="email"
               class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
               placeholder="Email"
+              type="email"
+              required
             />
           </div>
           <div class="flex justify-between relative">
