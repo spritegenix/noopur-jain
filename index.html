@@ -47,7 +47,7 @@
             <a
               href="/sound-healing.html"
               class="px-5 py-2 border-b border-zinc-300 hover:bg-[#8c793a] hover:text-white"
-              >Sound Healing</a
+              >Sound Healing Courses</a
             >
             <a
               href="/meditation-training-courses.html"
@@ -534,7 +534,7 @@
               <div class="flex justify-between relative">
                 <button
                   class="w-max relative z-10 px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
-                  onclick="contactModal()"
+                  onclick="contactModal1()"
                 >
                   Download Now
                 </button>
@@ -617,7 +617,7 @@
               <div class="flex justify-between relative">
                 <button
                   class="w-max relative z-10 px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min"
-                  onclick="contactModal()"
+                  onclick="contactModal2()"
                 >
                   Download Now
                 </button>
@@ -1228,19 +1228,95 @@
         </div>
       </div>
     </div>
-    <!-- Contact Modal -->
+    <!-- Contact Modal Full Moon Bundle -->
     <div
-      id="contactModal"
+      id="contactModal1"
       class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-70 z-50"
     >
       <div
         class="relative w-full h-full flex justify-center items-center"
-        onclick="contactCloseModal()"
+        onclick="contactCloseModal1()"
       >
         <div class="w-max h-max relative" onclick="event.stopPropagation()">
           <button
             class="absolute z-50 top-0 right-0 md:left-full md:-translate-x-1/2 md:-translate-y-1/2 text-white bg-red-500 hover:bg-red-700 p-1 w-8 h-8 rounded-full"
-            onclick="contactCloseModal()"
+            onclick="contactCloseModal1()"
+          >
+            &times;
+          </button>
+          <!-- Form Container  -->
+          <div
+            data-aos="fade-up"
+            class="w-full max-w-md p-5 bg-secondary rounded-lg"
+          >
+            <!-- heading  -->
+            <h2 class="text-primary heading-font text-3xl mb-5">
+              Please fill form to download
+            </h2>
+            <!-- Form  -->
+            <form
+              action="submit_form.php"
+              method="post"
+              class="max-w-screen-md mx-auto space-y-10 heading-font"
+            >
+              <div class="w-full h-min">
+                <input
+                  name="name"
+                  class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="w-full h-min">
+                <input
+                  name="email"
+                  class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="w-full h-min">
+                <input
+                  name="phone"
+                  class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                  placeholder="Contact Number"
+                  required
+                />
+              </div>
+              <div class="flex justify-between relative">
+                <button
+                  type="submit"
+                  class="px-3 py-2 bg-third hover:bg-[#bd9e37] text-white text-nowrap h-min w-max relative z-10"
+                >
+                  SUMBIT
+                </button>
+                <div
+                  class="w-full absolute top-1/2 h-0 border-t border-primary"
+                ></div>
+                <img
+                  src="./assets/icons/circle-texture.png"
+                  alt=""
+                  class="relative z-10 object-contain"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Modal NEW MOON  -->
+    <div
+      id="contactModal2"
+      class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-70 z-50"
+    >
+      <div
+        class="relative w-full h-full flex justify-center items-center"
+        onclick="contactCloseModal2()"
+      >
+        <div class="w-max h-max relative" onclick="event.stopPropagation()">
+          <button
+            class="absolute z-50 top-0 right-0 md:left-full md:-translate-x-1/2 md:-translate-y-1/2 text-white bg-red-500 hover:bg-red-700 p-1 w-8 h-8 rounded-full"
+            onclick="contactCloseModal2()"
           >
             &times;
           </button>
@@ -1375,11 +1451,11 @@
             </li>
             <li class="flex items-center gap-2">
               <img src="./assets/icons/call icon.png" alt="" />
-              <a href="tel:+91 8957865554">+91 8957865554</a>
+              <a href="tel:+91 9833356595">+91 9833356595</a>
             </li>
             <li class="flex items-center gap-2">
               <img src="./assets/icons/e mail icon.png" alt="" />
-              <a href="mailto:@Noopurjain.com">@Noopurjain.com</a>
+              <a href="mailto:hello@noopurjain.com">hello@noopurjain.com</a>
             </li>
           </ul>
           <div class="py-2 space-y-1">

@@ -58,14 +58,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'linux898.defaultserverdns.com'; // Your SMTP server
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'hello@noopurjain.com'; // Your email address
+    $mail->Username   = 'hellohello@noopurjain.com'; // Your email address
     $mail->Password   = 'your-email-password'; // Replace with your actual email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SMTPS (SSL/TLS) for port 465
     $mail->Port       = 465; // SMTP port
 
     // Send email to the host (yourself)
-    $mail->setFrom('hello@noopurjain.com', 'Noopur Jain');
-    $mail->addAddress('hello@noopurjain.com'); // Where you want to receive the form submissions
+    $mail->setFrom('hellohello@noopurjain.com', 'Noopur Jain');
+    $mail->addAddress('hellohello@noopurjain.com'); // Where you want to receive the form submissions
 
     // Content for the host
     $mail->isHTML(false);

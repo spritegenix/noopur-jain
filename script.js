@@ -43,12 +43,22 @@ function closeModal() {
 }
 
 // Contact Modal
-function contactModal() {
-  const modal = document.getElementById("contactModal");
+function contactModal1() {
+  const modal = document.getElementById("contactModal1");
   modal.classList.remove("hidden");
 }
 
-function contactCloseModal() {
-  const modal = document.getElementById("contactModal");
+function contactCloseModal1() {
+  const modal = document.getElementById("contactModal1");
+  modal.classList.add("hidden");
+}
+// Contact Modal
+function contactModal2() {
+  const modal = document.getElementById("contactModal2");
+  modal.classList.remove("hidden");
+}
+
+function contactCloseModal2() {
+  const modal = document.getElementById("contactModal2");
   modal.classList.add("hidden");
 }
