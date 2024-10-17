@@ -1255,26 +1255,32 @@
             </h2>
             <!-- Form  -->
             <form
-              action=""
+              action="submit_form.php"
               method="post"
               class="max-w-screen-md mx-auto space-y-10 heading-font"
             >
               <div class="w-full h-min">
                 <input
+                  name="name"
                   class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
                   placeholder="Name"
+                  required
                 />
               </div>
               <div class="w-full h-min">
                 <input
+                  name="email"
                   class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
                   placeholder="Email Address"
+                  required
                 />
               </div>
               <div class="w-full h-min">
                 <input
+                  name="phone"
                   class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-b border-primary px-3 py-1 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
                   placeholder="Contact Number"
+                  required
                 />
               </div>
               <div class="flex justify-between relative">
