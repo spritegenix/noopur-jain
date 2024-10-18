@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const eventsSwiper = new Swiper(".eventsSwiper", {
   // Optional parameters
   direction: "horizontal",
 

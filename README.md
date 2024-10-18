@@ -25,3 +25,7 @@ https://www.youtube.com/@alignwithnoopur
 https://www.linkedin.com/in/noopur-jain-42511216/
 
 Calendly link: https://calendly.com/noopur-pearls/free_30min_alignmentcall
+
+
+about - 7106
+reiki banner -

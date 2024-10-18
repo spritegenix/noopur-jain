@@ -62,3 +62,19 @@ function contactCloseModal2() {
   const modal = document.getElementById("contactModal2");
   modal.classList.add("hidden");
 }
+
+// Start Modal
+function startModal() {
+  const modal = document.getElementById("startModal");
+  modal.classList.remove("hidden");
+}
+
+function startCloseModal() {
+  const modal = document.getElementById("startModal");
+  modal.classList.add("hidden");
+}
+
+// Automatically open the modal on page load
+document.addEventListener("DOMContentLoaded", () => {
+  startModal();
+});
