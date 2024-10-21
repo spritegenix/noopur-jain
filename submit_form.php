@@ -72,7 +72,7 @@ try {
     $mail->Host       = 'linux898.defaultserverdns.com'; // Your SMTP server
     $mail->SMTPAuth   = true;
     $mail->Username   = 'hello@noopurjain.com'; // Your email address
-    $mail->Password   = 'your-email-password'; // Replace with your actual email password
+    $mail->Password   = ',{-=JoWI8#%c'; // Replace with your actual email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SMTPS (SSL/TLS) for port 465
     $mail->Port       = 465; // SMTP port
 
