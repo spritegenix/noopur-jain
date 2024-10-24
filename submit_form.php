@@ -24,8 +24,8 @@ if (empty($name) || empty($email)) {
 
 // Define Google Drive links
 $drive_links = [
-    '1' => 'https://drive.google.com/file/d/0B4xY6UslgZW2YWI1ZjZjODUtMjM2NC00MDI3LWJlMTktYmI3ZDQ2ZWZkODgz/view?resourcekey=0-M5iokqZ8mu4FChOyuQYD7g',
-    '2' => 'https://drive.google.com/file/d/0B1MVW1mFO2zmZHVRWEQ3Rkc3SVE/edit?resourcekey=0-u7mAvVbthYAG-_oxzMKz3Q'
+    '1' => 'https://drive.google.com/drive/folders/19GoC5IvflosAzQeCGlXK-CRmLSTIPBRs',
+    '2' => 'https://soundcloud.com/lunanova-meditation/30-powerful-new-moon-affirmations-guided-meditation?ref=clipboard&p=i&c=1&si=99AB8522422843BDBD13BA8E134AC162'
 ];
 
 // Get the appropriate drive link based on form type

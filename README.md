@@ -34,3 +34,5 @@ reiki banner -
 
 
 https://soundcloud.com/lunanova-meditation/30-powerful-new-moon-affirmations-guided-meditation?ref=clipboard&p=i&c=1&si=99AB8522422843BDBD13BA8E134AC162
+
+pdf- https://drive.google.com/drive/folders/19GoC5IvflosAzQeCGlXK-CRmLSTIPBRs
