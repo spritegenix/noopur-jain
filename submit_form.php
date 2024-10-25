@@ -24,7 +24,7 @@ if (empty($name) || empty($email)) {
 
 // Define Google Drive links
 $drive_links = [
-    '1' => 'https://drive.google.com/drive/folders/19GoC5IvflosAzQeCGlXK-CRmLSTIPBRs',
+    '1' => 'https://drive.google.com/drive/folders/1CwEY5BscGceokK9ppiPZ7VTtU_PpsTDw',
     '2' => 'https://soundcloud.com/lunanova-meditation/30-powerful-new-moon-affirmations-guided-meditation?ref=clipboard&p=i&c=1&si=99AB8522422843BDBD13BA8E134AC162'
 ];
 
